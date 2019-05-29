@@ -1,0 +1,163 @@
+<template>
+  <div class="one">
+    <div class="box">
+      <!-- 顶部小图钉 -->
+      <div class="nail"></div>
+      <!-- 卷轴区域 -->
+      <div class="title">
+        <div class="left"></div>
+        <div class="middle"></div>
+        <div class="right"></div>
+      </div>
+      <!-- 编者按 -->
+      <img class="editor" src="@&editor.png&"/>
+      <img class="message" src="@&message.png&"/>
+      <div class="hand"></div>
+      <!-- 文字区域 -->
+      <div class="text-box">
+
+      </div>
+      <!-- 底部按钮区域 -->
+      <div class="button-box">
+        <div class="button-1 button"></div>
+        <div class="button-2 button"></div>
+        <div class="button-3 button"></div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      setTimeout(() => {
+        document.getElementsByClassName('middle')[0].style.width = '229px'
+      }, 0)
+    },
+    close: function () {
+    }
+  }
+</script>
+
+
+<style lang="less">
+.title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60px;
+  text-align: center;
+  line-height: 60px;
+  height: 60px;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 252px;
+  display: flex;
+  justify-content: center;
+  p {
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    left: -1000px;
+    right: -1000px;
+    margin: auto;
+  }
+  .middle {
+    width: 0;
+    background-size: auto 100%;
+    margin: 2px -4px;
+    transition: width 2s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('@&scroll-text.png&');
+  }
+  .left, .right {
+    height: 60px;
+    width: 15px;
+    background-position-x: -13px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-image: url('@&scroll.png&');
+  }
+}
+.editor {
+  width: 85px;
+  background-image: url('@&editor.png&');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 23%;
+}
+.message {
+  width: 80%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 40%;
+}
+.hand {
+  width: calc(100% + 5px);
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  position: absolute;
+  bottom: 60px;
+  background-position-y: 100%;
+  background-image: url('@&hand.png&');
+}
+
+.button-box {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+  .button {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .button-1 {
+    z-index: 3;
+    background-size: 25px 25px;
+    background-image: url('@&button-1.png&');
+  }
+  .button-2 {
+    z-index: 2;
+    background-size: 35px 35px;
+    background-image: url('@&button-2.png&');
+  }
+  .button-3 {
+    z-index: 1;
+    background-image: url('@&button-3.png&');
+    background-size: 60px 60px;
+  }
+}
+
+.text-box {
+  width: 40%;
+  background-image: url('@&text.png&');
+  height: 400px;
+  background-position: bottom;
+  background-size: 100%;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 15%;
+  background-repeat: no-repeat;
+}
+</style>

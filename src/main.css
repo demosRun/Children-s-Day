@@ -1,0 +1,73 @@
+/* 这个文件里写的是全局样式,在各个页面都生效 */
+body, html, .ox {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  user-select: text;
+  font: normal 12px/180% "SimSun";
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* 清除浮动 */
+.clear {
+  clear: both;
+}
+h1, h2, h3, h4, h5, input {
+  margin: 0;
+  padding: 0;
+}
+ul, li {
+  list-style-type: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.o-topBar {
+  margin-bottom: 27%;
+}
+
+h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, button, input, textarea, th, td{
+  margin:0;
+  padding:0;
+}
+
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+
+/* 页面内容 */
+.box {
+  width: calc(100% - 30px);
+  height: calc(100% - 40px);
+  background-size: 100%;
+  margin: 10px;
+  background-color: #14bf8d;
+  border: 5px solid #1a1a1a;
+  position: relative;
+  margin-top: 20px;
+}
+.nail {
+  width: 82px;
+  height: 48px;
+  background-size: 100% 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 5px;
+  background-image: url('@&nail.png&');
+}

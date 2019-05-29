@@ -1,0 +1,165 @@
+body, html, .ox {
+  padding: 0;
+  margin: 0;
+}
+
+/* 清除浮动 */
+.clear {
+  clear: both;
+}
+
+.owo-animation {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+a:link, a:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+/* 清除浮动 */
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+[template=one] .title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60px;
+  text-align: center;
+  line-height: 60px;
+  height: 60px;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 252px;
+  display: flex;
+  justify-content: center;
+}
+
+[template=one] .title p {
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  left: -1000px;
+  right: -1000px;
+  margin: auto;
+}
+
+[template=one] .title .middle {
+  width: 0;
+  background-size: auto 100%;
+  margin: 2px -4px;
+  transition: width 2s;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../resource/scroll-text.png');
+}
+
+[template=one] .title .left,
+[template=one] .title .right {
+  height: 60px;
+  width: 15px;
+  background-position-x: -13px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-image: url('../resource/scroll.png');
+}
+
+[template=one] .editor {
+  width: 85px;
+  background-image: url('../resource/editor.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 23%;
+}
+
+[template=one] .message {
+  width: 80%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 40%;
+}
+
+[template=one] .hand {
+  width: calc(100% + 5px);
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  position: absolute;
+  bottom: 60px;
+  background-position-y: 100%;
+  background-image: url('../resource/hand.png');
+}
+
+[template=one] .button-box {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+}
+
+[template=one] .button-box .button {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[template=one] .button-box .button-1 {
+  z-index: 3;
+  background-size: 25px 25px;
+  background-image: url('../resource/button-1.png');
+}
+
+[template=one] .button-box .button-2 {
+  z-index: 2;
+  background-size: 35px 35px;
+  background-image: url('../resource/button-2.png');
+}
+
+[template=one] .button-box .button-3 {
+  z-index: 1;
+  background-image: url('../resource/button-3.png');
+  background-size: 60px 60px;
+}
+
+[template=one] .text-box {
+  width: 40%;
+  background-image: url('../resource/text.png');
+  height: 400px;
+  background-position: bottom;
+  background-size: 100%;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 15%;
+  background-repeat: no-repeat;
+}
