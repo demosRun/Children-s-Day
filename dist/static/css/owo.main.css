@@ -33,6 +33,10 @@ a:link, a:visited {
   clear: both;
 }
 
+[template=one] .box {
+  background-color: #14bf8d;
+}
+
 [template=one] .title {
   position: absolute;
   left: 0;
@@ -176,8 +180,8 @@ a:link, a:visited {
 }
 
 [template=one] .shelter {
-  height: 23px;
   width: 100%;
+  height: 160px;
   background-color: #14bf8d;
 }
 
@@ -223,21 +227,21 @@ a:link, a:visited {
 
 @-webkit-keyframes short {
   from {
-    width: 100%;
+    height: 160px;
   }
 
   to {
-    width: 0%;
+    height: 0;
   }
 }
 
 @keyframes short {
   from {
-    width: 100%;
+    height: 160px;
   }
 
   to {
-    width: 0%;
+    height: 0;
   }
 }
 
@@ -246,8 +250,8 @@ a:link, a:visited {
   opacity: 0;
   -webkit-animation: fadeIn 2s linear;
           animation: fadeIn 2s linear;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
@@ -255,55 +259,22 @@ a:link, a:visited {
 }
 
 [template=one] .shelter {
-  -webkit-animation: short 1.5s linear;
-          animation: short 1.5s linear;
+  -webkit-animation: short 5s linear;
+          animation: short 5s linear;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-}
-
-[template=one] .shelter-1 {
-  -webkit-animation-delay: 12s;
-          animation-delay: 12s;
-}
-
-[template=one] .shelter-2 {
-  -webkit-animation-delay: 10.5s;
-          animation-delay: 10.5s;
-}
-
-[template=one] .shelter-3 {
-  -webkit-animation-delay: 9s;
-          animation-delay: 9s;
-}
-
-[template=one] .shelter-4 {
-  -webkit-animation-delay: 7.5s;
-          animation-delay: 7.5s;
-}
-
-[template=one] .shelter-5 {
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-}
-
-[template=one] .shelter-6 {
-  -webkit-animation-delay: 4.5s;
-          animation-delay: 4.5s;
-}
-
-[template=one] .shelter-7 {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 [template=one] .hand {
   opacity: 0;
   -webkit-animation: fadeIn 2s linear;
           animation: fadeIn 2s linear;
-  -webkit-animation-delay: 13s;
-          animation-delay: 13s;
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
@@ -319,37 +290,37 @@ a:link, a:visited {
 }
 
 [template=one] .button-box .button-1 {
-  -webkit-animation-delay: 13s;
-          animation-delay: 13s;
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
 }
 
 [template=one] .button-box .button-2 {
-  -webkit-animation-delay: 13.2s;
-          animation-delay: 13.2s;
+  -webkit-animation-delay: 9.2s;
+          animation-delay: 9.2s;
 }
 
 [template=one] .button-box .button-3 {
-  -webkit-animation-delay: 13.4s;
-          animation-delay: 13.4s;
+  -webkit-animation-delay: 9.4s;
+          animation-delay: 9.4s;
 }
+[template=two] .box {
+  background-color: #e5d098;
+}
+
 [template=two] .title {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 60px;
+  left: 2%;
+  top: 2%;
   text-align: center;
-  line-height: 60px;
-  height: 60px;
+  width: 60px;
   overflow: hidden;
   margin: 0 auto;
-  width: 252px;
-  display: flex;
-  justify-content: center;
+  height: 175px;
 }
 
 [template=two] .title p {
-  width: 200px;
-  height: 40px;
+  height: 200px;
+  width: 40px;
   position: absolute;
   left: -1000px;
   right: -1000px;
@@ -357,240 +328,71 @@ a:link, a:visited {
 }
 
 [template=two] .title .middle {
-  width: 0;
-  background-size: auto 100%;
-  margin: 2px -4px;
-  transition: width 2s;
+  width: 100%;
+  background-size: 100% auto;
+  transition: height 2s;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('../resource/scroll-text.png');
+  height: 0;
+  background-position-y: -18px;
+  background-image: url('../resource/scroll-2.png');
 }
 
 [template=two] .title .left,
 [template=two] .title .right {
-  height: 60px;
-  width: 15px;
-  background-position-x: -13px;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-image: url('../resource/scroll.png');
-}
-
-[template=two] .editor {
-  width: 85px;
-  background-image: url('../resource/editor.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 23%;
-}
-
-[template=two] .message {
-  width: 90%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  position: absolute;
-  bottom: 44%;
-  opacity: 0;
-}
-
-[template=two] .hand {
-  width: calc(100% + 5px);
-  height: 300px;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  position: absolute;
-  bottom: 60px;
-  background-position-y: 100%;
-  background-image: url('../resource/hand.png');
-}
-
-[template=two] .button-box {
   width: 60px;
-  height: 60px;
-  position: relative;
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  cursor: pointer;
-}
-
-[template=two] .button-box .button {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
+  height: 17px;
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-y: -159px;
+  background-image: url('../resource/scroll-2.png');
 }
 
-[template=two] .button-box .button-1 {
-  z-index: 3;
-  background-size: 20px 20px;
-  background-image: url('../resource/button-1.png');
+[template=two] .de {
+  width: 60px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
 
-[template=two] .button-box .button-2 {
-  z-index: 2;
-  background-size: 32px 32px;
-  background-image: url('../resource/button-2.png');
-}
-
-[template=two] .button-box .button-3 {
-  z-index: 1;
-  background-image: url('../resource/button-3.png');
-  background-size: 60px 60px;
-}
-
-[template=two] .text-box {
-  width: 138px;
-  background-image: url('../resource/text.png');
-  height: 400px;
+[template=two] .content {
+  position: absolute;
+  width: 100%;
+  height: 95%;
   background-position: bottom;
+  background-repeat: no-repeat;
   background-size: 100%;
-  z-index: 10;
+  background-image: url('../resource/content.png');
+}
+
+[template=two] .text {
+  width: 70%;
+  height: 0%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: absolute;
+  top: 69%;
   left: 0;
   right: 0;
   margin: 0 auto;
-  position: absolute;
-  bottom: 15%;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: flex-end;
-}
-
-[template=two] .shelter {
-  height: 23px;
-  width: 100%;
-  background-color: #14bf8d;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn2 {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 0.8;
-  }
+  -webkit-animation: short 3s linear;
+          animation: short 3s linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  background-image: url('../resource/text-2.png');
 }
 
 @keyframes short {
   from {
-    width: 100%;
+    height: 0%;
   }
 
   to {
-    width: 0%;
+    height: 12%;
   }
-}
-
-[template=two] .message,
-[template=two] .editor {
-  opacity: 0;
-  -webkit-animation: fadeIn 2s linear;
-          animation: fadeIn 2s linear;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-[template=two] .shelter {
-  -webkit-animation: short 1.5s linear;
-          animation: short 1.5s linear;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-[template=two] .shelter-1 {
-  -webkit-animation-delay: 12s;
-          animation-delay: 12s;
-}
-
-[template=two] .shelter-2 {
-  -webkit-animation-delay: 10.5s;
-          animation-delay: 10.5s;
-}
-
-[template=two] .shelter-3 {
-  -webkit-animation-delay: 9s;
-          animation-delay: 9s;
-}
-
-[template=two] .shelter-4 {
-  -webkit-animation-delay: 7.5s;
-          animation-delay: 7.5s;
-}
-
-[template=two] .shelter-5 {
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-}
-
-[template=two] .shelter-6 {
-  -webkit-animation-delay: 4.5s;
-          animation-delay: 4.5s;
-}
-
-[template=two] .shelter-7 {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-
-[template=two] .hand {
-  opacity: 0;
-  -webkit-animation: fadeIn 2s linear;
-          animation: fadeIn 2s linear;
-  -webkit-animation-delay: 13s;
-          animation-delay: 13s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-[template=two] .button-box .button {
-  opacity: 0;
-  -webkit-animation: fadeIn2 1s infinite alternate;
-          animation: fadeIn2 1s infinite alternate;
-  -webkit-animation-iteration-count: -1;
-          animation-iteration-count: -1;
-}
-
-[template=two] .button-box .button-1 {
-  -webkit-animation-delay: 13s;
-          animation-delay: 13s;
-}
-
-[template=two] .button-box .button-2 {
-  -webkit-animation-delay: 13.2s;
-          animation-delay: 13.2s;
-}
-
-[template=two] .button-box .button-3 {
-  -webkit-animation-delay: 13.4s;
-          animation-delay: 13.4s;
 }

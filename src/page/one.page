@@ -16,13 +16,7 @@
       <div class="hand"></div>
       <!-- 文字区域 -->
       <div class="text-box">
-        <div class="shelter shelter-1"></div>
-        <div class="shelter shelter-2"></div>
-        <div class="shelter shelter-3"></div>
-        <div class="shelter shelter-4"></div>
-        <div class="shelter shelter-5"></div>
-        <div class="shelter shelter-6"></div>
-        <div class="shelter shelter-7"></div>
+        <div class="shelter"></div>
       </div>
       <!-- 底部按钮区域 -->
       <div class="button-box" @click="two">
@@ -40,7 +34,6 @@
       // 获取屏幕信息
       const screenInfo = $tool.getScreenInfo()
       // 判断屏幕比例
-      console.log(this.$el)
       if (screenInfo.ratio > 1) {
         this.$el.getElementsByClassName('box')[0].style.width = screenInfo.clientHeight * 0.5 + 'px'
       }
@@ -56,6 +49,9 @@
 
 
 <style lang="less">
+.box {
+  background-color: #14bf8d;
+}
 .title {
   position: absolute;
   left: 0;
@@ -187,8 +183,7 @@
 // 文字遮蔽罩
 .shelter {
   width: 100%;
-  height: 23px;
-  width: 100%;
+  height: 160px;
   background-color: #14bf8d;
 }
 
@@ -213,10 +208,10 @@
 
 @keyframes short {
   from {
-    width: 100%;
+    height: 160px;
   }
   to {
-    width: 0%;
+    height: 0;
   }
 }
 
@@ -224,41 +219,20 @@
 .message, .editor {
   opacity: 0;
   animation: fadeIn 2s linear;
-  animation-delay: 1s;
+  animation-delay: 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 .shelter {
-  animation: short 1.5s linear;
-  
+  animation: short 5s linear;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-}
-.shelter-1 {
-  animation-delay: 12s;
-}
-.shelter-2 {
-  animation-delay: 10.5s;
-}
-.shelter-3 {
-  animation-delay: 9s;
-}
-.shelter-4 {
-  animation-delay: 7.5s;
-}
-.shelter-5 {
-  animation-delay: 6s;
-}
-.shelter-6 {
-  animation-delay: 4.5s;
-}
-.shelter-7 {
-  animation-delay: 3s;
+  animation-delay: 4s;
 }
 .hand {
   opacity: 0;
   animation: fadeIn 2s linear;
-  animation-delay: 13s;
+  animation-delay: 9s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -269,12 +243,12 @@
   animation-iteration-count: -1;
 }
 .button-box .button-1 {
-  animation-delay: 13s;
+  animation-delay: 9s;
 }
 .button-box .button-2 {
-  animation-delay: 13.2s;
+  animation-delay: 9.2s;
 }
 .button-box .button-3 {
-  animation-delay: 13.4s;
+  animation-delay: 9.4s;
 }
 </style>

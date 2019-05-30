@@ -1,5 +1,5 @@
 // build by owo frame!
-// Thu May 30 2019 10:04:39 GMT+0800 (GMT+08:00)
+// Thu May 30 2019 13:12:25 GMT+0800 (GMT+08:00)
 
 "use strict";
 
@@ -12,8 +12,6 @@ window.owo = {
 
         // 获取屏幕信息
         var screenInfo = $tool.getScreenInfo(); // 判断屏幕比例
-
-        console.log(this.$el);
 
         if (screenInfo.ratio > 1) {
           this.$el.getElementsByClassName('box')[0].style.width = screenInfo.clientHeight * 0.5 + 'px';
@@ -39,7 +37,7 @@ window.owo = {
         }
 
         setTimeout(function () {
-          _this2.$el.getElementsByClassName('middle')[0].style.width = '229px';
+          _this2.$el.getElementsByClassName('middle')[0].style.height = '140px';
         }, 0);
       },
       "close": function close() {}

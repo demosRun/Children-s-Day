@@ -1,904 +1,1529 @@
-09:53:41.900 DEBUG 获取到配置信息: 
-09:53:41.900 DEBUG {"basePath":"./","watcher":{"enable":true,"ignored":"./dist/*","depth":99},"outPut":{"minifyCss":false,"minifyJs":false,"addVersion":false},"serverPort":8000,"server":true,"autoReload":true,"remoteDebug":false,"root":"/src","entry":"one","title":"页面","outFolder":"./dist","resourceFolder":"./src/resource","headList":[{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}],"scriptList":[{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}],"styleList":[{"name":"main","src":"./src/main.css","resource":true}],"pageList":[{"main":true,"isPage":true,"name":"one","src":"./src/page/one.page","temple":"<temple name=\"one\" src=\"./src/page/one.page\" isPage=\"true\"></temple>","outerHTML":"<!DOCTYPE html>\r\n<html lang=\"zh-CN\">\r\n  <head>\r\n    <title>页面</title>\r\n    <!-- 页面的元信息 -->\r\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"/>\r\n    <meta name=\"viewport\" content=\"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no\"/>\r\n    <!-- css-output -->\r\n    <!-- animation-output -->\r\n  </head>\r\n  <body>\r\n    <!-- 页面区域 -->\r\n    <temple name=\"one\" src=\"./src/page/one.page\" isPage=\"true\"></temple>\r\n    <temple name=\"two\" src=\"./src/page/two.page\" isPage=\"true\"></temple>\r\n    <!-- script-output -->\r\n  </body>\r\n</html>"},{"isPage":true,"name":"two","src":"./src/page/two.page","temple":"<temple name=\"two\" src=\"./src/page/two.page\" isPage=\"true\"></temple>","outerHTML":"<!DOCTYPE html>\r\n<html lang=\"zh-CN\">\r\n  <head>\r\n    <title>页面</title>\r\n    <!-- 页面的元信息 -->\r\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"/>\r\n    <meta name=\"viewport\" content=\"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no\"/>\r\n    <!-- css-output -->\r\n    <!-- animation-output -->\r\n  </head>\r\n  <body>\r\n    <!-- 页面区域 -->\r\n    <div class=\"one ox\" template=\"one\" id=\"o-one\" style=\"display: none;\">\n    <div class=\"box\">\n      <!-- 顶部小图钉 -->\n      <div class=\"nail\"></div>\n      <!-- 卷轴区域 -->\n      <div class=\"title\">\n        <div class=\"left\"></div>\n        <div class=\"middle\"></div>\n        <div class=\"right\"></div>\n      </div>\n      <!-- 编者按 -->\n      <img class=\"editor\" src=\"@&amp;editor.png&amp;\">\n      <img class=\"message\" src=\"@&amp;message.png&amp;\">\n      <div class=\"hand\"></div>\n      <!-- 文字区域 -->\n      <div class=\"text-box\">\n        <div class=\"shelter shelter-1\"></div>\n        <div class=\"shelter shelter-2\"></div>\n        <div class=\"shelter shelter-3\"></div>\n        <div class=\"shelter shelter-4\"></div>\n        <div class=\"shelter shelter-5\"></div>\n        <div class=\"shelter shelter-6\"></div>\n        <div class=\"shelter shelter-7\"></div>\n      </div>\n      <!-- 底部按钮区域 -->\n      <div class=\"button-box\" @click=\"two\">\n        <div class=\"button-1 button\"></div>\n        <div class=\"button-2 button\"></div>\n        <div class=\"button-3 button\"></div>\n      </div>\n    </div>\n  </div>\r\n    <temple name=\"two\" src=\"./src/page/two.page\" isPage=\"true\"></temple>\r\n    <!-- script-output -->\r\n  </body>\r\n</html>"}],"dev":{"basePath":"./","watcher":{"enable":true,"ignored":"./dist/*","depth":99},"outPut":{"minifyCss":false,"minifyJs":false,"addVersion":false},"serverPort":8000,"server":true,"autoReload":true,"remoteDebug":false},"build":{"basePath":"./","outPut":{"minifyCss":true,"minifyJs":true,"addVersion":true,"embedSize":10,"merge":false}}} 
-09:53:41.900 INFO  --------------------------- 开始编译 --------------------------- 
-09:53:41.900 INFO  程序运行目录: D:\work\Children's Day 
-09:53:41.900 INFO  首次启动! 
-09:53:41.900 INFO  生成版本号: h610ojkufxt 
-09:53:41.908 INFO  清理资源文件夹: D:\work\Children's Day\dist\static 
-09:53:41.908 INFO  文件夹不存在: D:\work\Children's Day\dist\static 
-09:53:41.908 INFO  创建文件夹: D:\work\Children's Day\dist\static 
-09:53:41.908 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
-09:53:41.908 DEBUG 读取网页标题: 页面 
-09:53:41.908 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
-09:53:41.909 INFO  开始处理模块: one 
-09:53:41.909 DEBUG 处理模板: ./src/page/one.page 
-09:53:42.033 DEBUG 发现 keyframes 规则: fadeIn 
-09:53:42.033 DEBUG 发现 keyframes 规则: fadeIn2 
-09:53:42.033 DEBUG 发现 keyframes 规则: short 
-09:53:42.034 DEBUG 缓存模板: one./src/page/one.page 
-09:53:42.034 DEBUG 模板one处理用时: 125 毫秒! 
-09:53:42.034 INFO  开始处理模块: two 
-09:53:42.034 DEBUG 处理模板: ./src/page/two.page 
-09:53:42.047 DEBUG 发现 keyframes 规则: fadeIn 
-09:53:42.047 DEBUG 发现 keyframes 规则: fadeIn2 
-09:53:42.047 DEBUG 发现 keyframes 规则: short 
-09:53:42.048 DEBUG 缓存模板: two./src/page/two.page 
-09:53:42.048 DEBUG 模板two处理用时: 14 毫秒! 
-09:53:42.049 INFO  文件夹不存在: D:\work\Children's Day\dist\static\resource 
-09:53:42.049 INFO  创建文件夹: D:\work\Children's Day\dist\static\resource 
-09:53:42.053 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-09:53:42.053 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-09:53:42.053 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:53:42.053 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-09:53:42.053 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-09:53:42.053 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-09:53:42.053 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-09:53:42.053 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-09:53:42.053 DEBUG 处理资源: D:\work\Children's Day\src\resource\scroll-text.png,D:\work\Children's Day\src\resource\scroll.png,D:\work\Children's Day\src\resource\editor.png,D:\work\Children's Day\src\resource\hand.png,D:\work\Children's Day\src\resource\button-1.png,D:\work\Children's Day\src\resource\button-2.png,D:\work\Children's Day\src\resource\button-3.png,D:\work\Children's Day\src\resource\text.png 
-09:53:42.055 INFO  css中的资源处理完毕! 
-09:53:42.055 DEBUG 使用postcss处理样式，使用了2个插件! 
-09:53:42.069 INFO  正在处理script! 
-09:53:42.069 INFO  工程中包含多个页面! 
-09:53:42.085 DEBUG 页面中不包含切换动画! 
-09:53:42.903 INFO  文件夹不存在: D:\work\Children's Day\dist\static\js 
-09:53:42.904 INFO  创建文件夹: D:\work\Children's Day\dist\static\js 
-09:53:42.915 INFO  js中的资源处理完毕! 
-09:53:42.916 INFO  读取文件: C:\Users\PG\Documents\GitHub\PG\core\debug\autoReload.js 
-09:53:42.916 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
-09:53:42.916 DEBUG 外部脚本数量: 1 
-09:53:42.916 DEBUG 处理脚本: jquery1.11.0 
-09:53:42.916 DEBUG 网络脚本: jquery1.11.0 
-09:53:42.916 DEBUG 完成外部脚本引用处理! 
-09:53:42.916 DEBUG 输出scriptData 
-09:53:42.916 DEBUG 判断是否可以输出Html! 
-09:53:42.916 DEBUG 还有没有经过处理的资源! 
-09:53:42.916 INFO  监控文件夹变化: D:\work\Children's Day\src 
-09:53:42.927 INFO  服务器运行在: 127.0.0.1:8000 
-09:53:43.125 INFO  使用postcss处理完毕! 用时: 1070 毫秒 
-09:53:43.125 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .one:",".one[template=two]:"],["[template=two] .one ",".one[template=two] "],["[template=two] .one{",".one[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
-09:53:43.125 INFO  文件夹不存在: D:\work\Children's Day\dist\static\css 
-09:53:43.125 INFO  创建文件夹: D:\work\Children's Day\dist\static\css 
-09:53:43.126 INFO  开始处理附属css中的资源 
-09:53:43.126 INFO  附属css中的资源处理完毕! 
-09:53:43.126 DEBUG 判断是否可以输出Html! 
-09:53:43.126 DEBUG 准备输出html! 
-09:53:43.126 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:53:43.126 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:53:43.126 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-09:53:43.126 DEBUG 处理资源: D:\work\Children's Day\src\resource\message.png 
-09:53:43.126 DEBUG 开始美化html 
-09:53:43.139 INFO  发送重新页面需要刷新命令! 
-09:53:43.174 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
-09:53:43.174 INFO  读取成功: C:\Users\PG\Documents\GitHub\PG\core\debug\autoReload.js 
-09:53:43.175 INFO  读取成功: D:\work\Children's Day\src\main.css 
-09:53:43.175 DEBUG 处理资源: D:\work\Children's Day\src\resource\nail.png 
-09:53:43.196 INFO  写入文件: D:\work\Children's Day\dist\static\js\autoReload.js 
-09:53:43.196 INFO  写入文件: D:\work\Children's Day\dist\static\css\main.css 
-09:53:43.263 DEBUG 文件处理成功: 
-09:53:43.263 DEBUG D:\work\Children's Day\dist\static\resource\nail.png 
-09:53:43.289 DEBUG 文件处理成功: 
-09:53:43.289 DEBUG D:\work\Children's Day\dist\static\resource\message.png 
-09:53:43.370 DEBUG 文件处理成功: 
-09:53:43.370 DEBUG D:\work\Children's Day\dist\static\resource\scroll-text.png 
-09:53:43.370 DEBUG D:\work\Children's Day\dist\static\resource\scroll.png 
-09:53:43.370 DEBUG D:\work\Children's Day\dist\static\resource\editor.png 
-09:53:43.370 DEBUG D:\work\Children's Day\dist\static\resource\hand.png 
-09:53:43.370 DEBUG D:\work\Children's Day\dist\static\resource\button-1.png 
-09:53:43.370 DEBUG D:\work\Children's Day\dist\static\resource\button-2.png 
-09:53:43.370 DEBUG D:\work\Children's Day\dist\static\resource\button-3.png 
-09:53:43.370 DEBUG D:\work\Children's Day\dist\static\resource\text.png 
-09:54:28.249 INFO  file change: D:\work\Children's Day\src\page\one.page 
-09:54:28.250 INFO  --------------------------- 开始编译 --------------------------- 
-09:54:28.250 INFO  程序运行目录: D:\work\Children's Day 
-09:54:28.250 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\one.page 
-09:54:28.250 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
-09:54:28.250 DEBUG 读取网页标题: 页面 
-09:54:28.250 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
-09:54:28.250 INFO  开始处理模块: one 
-09:54:28.250 DEBUG 处理模板: ./src/page/one.page 
-09:54:28.267 DEBUG 发现 keyframes 规则: fadeIn 
-09:54:28.267 DEBUG 发现 keyframes 规则: fadeIn2 
-09:54:28.267 DEBUG 发现 keyframes 规则: short 
-09:54:28.267 DEBUG 缓存模板: one./src/page/one.page 
-09:54:28.267 DEBUG 模板one处理用时: 17 毫秒! 
-09:54:28.267 INFO  开始处理模块: two 
-09:54:28.267 DEBUG 处理模板: ./src/page/two.page 
-09:54:28.286 DEBUG 发现 keyframes 规则: fadeIn 
-09:54:28.286 DEBUG 发现 keyframes 规则: fadeIn2 
-09:54:28.286 DEBUG 发现 keyframes 规则: short 
-09:54:28.287 DEBUG 缓存模板: two./src/page/two.page 
-09:54:28.287 DEBUG 模板two处理用时: 20 毫秒! 
-09:54:28.288 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-09:54:28.288 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-09:54:28.288 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:54:28.288 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-09:54:28.288 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-09:54:28.288 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-09:54:28.288 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-09:54:28.288 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-09:54:28.289 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-09:54:28.289 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-09:54:28.289 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:54:28.289 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-09:54:28.289 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-09:54:28.289 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-09:54:28.289 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-09:54:28.289 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-09:54:28.289 INFO  css中的资源处理完毕! 
-09:54:28.289 DEBUG 使用postcss处理样式，使用了2个插件! 
-09:54:28.294 INFO  正在处理script! 
-09:54:28.294 INFO  工程中包含多个页面! 
-09:54:28.296 DEBUG 页面中不包含切换动画! 
-09:54:28.506 INFO  js中的资源处理完毕! 
-09:54:28.507 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
-09:54:28.507 DEBUG 外部脚本数量: 1 
-09:54:28.507 DEBUG 处理脚本: jquery1.11.0 
-09:54:28.507 DEBUG 网络脚本: jquery1.11.0 
-09:54:28.507 DEBUG 完成外部脚本引用处理! 
-09:54:28.507 DEBUG 输出scriptData 
-09:54:28.507 DEBUG 判断是否可以输出Html! 
-09:54:28.507 DEBUG 还有没有经过处理的资源! 
-09:54:28.643 INFO  使用postcss处理完毕! 用时: 354 毫秒 
-09:54:28.643 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .one:",".one[template=two]:"],["[template=two] .one ",".one[template=two] "],["[template=two] .one{",".one[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
-09:54:28.643 DEBUG 判断是否可以输出Html! 
-09:54:28.643 DEBUG 准备输出html! 
-09:54:28.643 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:54:28.643 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-09:54:28.643 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:54:28.643 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-09:54:28.643 DEBUG 开始美化html 
-09:54:28.650 INFO  发送重新页面需要刷新命令! 
-09:54:28.653 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
-09:54:55.476 INFO  file change: D:\work\Children's Day\src\page\one.page 
-09:54:55.477 INFO  --------------------------- 开始编译 --------------------------- 
-09:54:55.477 INFO  程序运行目录: D:\work\Children's Day 
-09:54:55.477 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\one.page 
-09:54:55.477 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
-09:54:55.477 DEBUG 读取网页标题: 页面 
-09:54:55.477 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
-09:54:55.477 INFO  开始处理模块: one 
-09:54:55.477 DEBUG 处理模板: ./src/page/one.page 
-09:54:55.492 DEBUG 发现 keyframes 规则: fadeIn 
-09:54:55.492 DEBUG 发现 keyframes 规则: fadeIn2 
-09:54:55.492 DEBUG 发现 keyframes 规则: short 
-09:54:55.492 DEBUG 缓存模板: one./src/page/one.page 
-09:54:55.492 DEBUG 模板one处理用时: 15 毫秒! 
-09:54:55.492 INFO  开始处理模块: two 
-09:54:55.492 DEBUG 处理模板: ./src/page/two.page 
-09:54:55.509 DEBUG 发现 keyframes 规则: fadeIn 
-09:54:55.509 DEBUG 发现 keyframes 规则: fadeIn2 
-09:54:55.509 DEBUG 发现 keyframes 规则: short 
-09:54:55.509 DEBUG 缓存模板: two./src/page/two.page 
-09:54:55.509 DEBUG 模板two处理用时: 17 毫秒! 
-09:54:55.509 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-09:54:55.509 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-09:54:55.509 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:54:55.509 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-09:54:55.510 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-09:54:55.510 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-09:54:55.510 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-09:54:55.510 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-09:54:55.510 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-09:54:55.510 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-09:54:55.510 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:54:55.510 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-09:54:55.510 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-09:54:55.510 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-09:54:55.510 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-09:54:55.510 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-09:54:55.510 INFO  css中的资源处理完毕! 
-09:54:55.510 DEBUG 使用postcss处理样式，使用了2个插件! 
-09:54:55.512 INFO  正在处理script! 
-09:54:55.513 INFO  工程中包含多个页面! 
-09:54:55.513 DEBUG 页面中不包含切换动画! 
-09:54:55.592 INFO  js中的资源处理完毕! 
-09:54:55.593 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
-09:54:55.593 DEBUG 外部脚本数量: 1 
-09:54:55.593 DEBUG 处理脚本: jquery1.11.0 
-09:54:55.593 DEBUG 网络脚本: jquery1.11.0 
-09:54:55.593 DEBUG 完成外部脚本引用处理! 
-09:54:55.593 DEBUG 输出scriptData 
-09:54:55.593 DEBUG 判断是否可以输出Html! 
-09:54:55.593 DEBUG 还有没有经过处理的资源! 
-09:54:55.742 INFO  使用postcss处理完毕! 用时: 232 毫秒 
-09:54:55.742 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .one:",".one[template=two]:"],["[template=two] .one ",".one[template=two] "],["[template=two] .one{",".one[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
-09:54:55.742 DEBUG 判断是否可以输出Html! 
-09:54:55.742 DEBUG 准备输出html! 
-09:54:55.742 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:54:55.742 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-09:54:55.742 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:54:55.742 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-09:54:55.742 DEBUG 开始美化html 
-09:54:55.747 INFO  发送重新页面需要刷新命令! 
-09:54:55.756 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
-09:55:05.827 INFO  file change: D:\work\Children's Day\src\page\two.page 
-09:55:05.827 INFO  --------------------------- 开始编译 --------------------------- 
-09:55:05.827 INFO  程序运行目录: D:\work\Children's Day 
-09:55:05.827 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
-09:55:05.827 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
-09:55:05.828 DEBUG 读取网页标题: 页面 
-09:55:05.828 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
-09:55:05.828 INFO  开始处理模块: one 
-09:55:05.828 DEBUG 处理模板: ./src/page/one.page 
-09:55:05.845 DEBUG 发现 keyframes 规则: fadeIn 
-09:55:05.845 DEBUG 发现 keyframes 规则: fadeIn2 
-09:55:05.845 DEBUG 发现 keyframes 规则: short 
-09:55:05.845 DEBUG 缓存模板: one./src/page/one.page 
-09:55:05.845 DEBUG 模板one处理用时: 17 毫秒! 
-09:55:05.845 INFO  开始处理模块: two 
-09:55:05.845 DEBUG 处理模板: ./src/page/two.page 
-09:55:05.861 DEBUG 发现 keyframes 规则: fadeIn 
-09:55:05.861 DEBUG 发现 keyframes 规则: fadeIn2 
-09:55:05.861 DEBUG 发现 keyframes 规则: short 
-09:55:05.861 DEBUG 缓存模板: two./src/page/two.page 
-09:55:05.861 DEBUG 模板two处理用时: 16 毫秒! 
-09:55:05.861 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-09:55:05.861 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-09:55:05.861 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:55:05.861 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-09:55:05.861 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-09:55:05.861 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-09:55:05.861 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-09:55:05.861 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-09:55:05.861 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-09:55:05.861 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-09:55:05.861 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:55:05.861 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-09:55:05.861 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-09:55:05.862 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-09:55:05.862 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-09:55:05.862 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-09:55:05.862 INFO  css中的资源处理完毕! 
-09:55:05.862 DEBUG 使用postcss处理样式，使用了2个插件! 
-09:55:05.867 INFO  正在处理script! 
-09:55:05.867 INFO  工程中包含多个页面! 
-09:55:05.868 DEBUG 页面中不包含切换动画! 
-09:55:05.973 INFO  js中的资源处理完毕! 
-09:55:05.974 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
-09:55:05.974 DEBUG 外部脚本数量: 1 
-09:55:05.974 DEBUG 处理脚本: jquery1.11.0 
-09:55:05.974 DEBUG 网络脚本: jquery1.11.0 
-09:55:05.974 DEBUG 完成外部脚本引用处理! 
-09:55:05.974 DEBUG 输出scriptData 
-09:55:05.974 DEBUG 判断是否可以输出Html! 
-09:55:05.974 DEBUG 还有没有经过处理的资源! 
-09:55:06.102 INFO  使用postcss处理完毕! 用时: 240 毫秒 
-09:55:06.102 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .one:",".one[template=two]:"],["[template=two] .one ",".one[template=two] "],["[template=two] .one{",".one[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
-09:55:06.102 DEBUG 判断是否可以输出Html! 
-09:55:06.102 DEBUG 准备输出html! 
-09:55:06.102 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:55:06.102 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-09:55:06.102 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:55:06.102 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-09:55:06.102 DEBUG 开始美化html 
-09:55:06.109 INFO  发送重新页面需要刷新命令! 
-09:55:06.111 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
-09:55:17.688 INFO  file change: D:\work\Children's Day\src\page\two.page 
-09:55:17.688 INFO  --------------------------- 开始编译 --------------------------- 
-09:55:17.688 INFO  程序运行目录: D:\work\Children's Day 
-09:55:17.688 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
-09:55:17.688 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
-09:55:17.689 DEBUG 读取网页标题: 页面 
-09:55:17.689 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
-09:55:17.689 INFO  开始处理模块: one 
-09:55:17.689 DEBUG 处理模板: ./src/page/one.page 
-09:55:17.704 DEBUG 发现 keyframes 规则: fadeIn 
-09:55:17.705 DEBUG 发现 keyframes 规则: fadeIn2 
-09:55:17.705 DEBUG 发现 keyframes 规则: short 
-09:55:17.705 DEBUG 缓存模板: one./src/page/one.page 
-09:55:17.705 DEBUG 模板one处理用时: 16 毫秒! 
-09:55:17.705 INFO  开始处理模块: two 
-09:55:17.705 DEBUG 处理模板: ./src/page/two.page 
-09:55:17.721 DEBUG 发现 keyframes 规则: fadeIn 
-09:55:17.721 DEBUG 发现 keyframes 规则: fadeIn2 
-09:55:17.721 DEBUG 发现 keyframes 规则: short 
-09:55:17.721 DEBUG 缓存模板: two./src/page/two.page 
-09:55:17.721 DEBUG 模板two处理用时: 16 毫秒! 
-09:55:17.721 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-09:55:17.721 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-09:55:17.721 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:55:17.721 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-09:55:17.721 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-09:55:17.721 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-09:55:17.721 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-09:55:17.721 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-09:55:17.721 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-09:55:17.721 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-09:55:17.722 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:55:17.722 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-09:55:17.722 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-09:55:17.722 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-09:55:17.722 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-09:55:17.722 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-09:55:17.722 INFO  css中的资源处理完毕! 
-09:55:17.722 DEBUG 使用postcss处理样式，使用了2个插件! 
-09:55:17.727 INFO  正在处理script! 
-09:55:17.728 INFO  工程中包含多个页面! 
-09:55:17.728 DEBUG 页面中不包含切换动画! 
-09:55:17.803 INFO  js中的资源处理完毕! 
-09:55:17.803 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
-09:55:17.803 DEBUG 外部脚本数量: 1 
-09:55:17.803 DEBUG 处理脚本: jquery1.11.0 
-09:55:17.803 DEBUG 网络脚本: jquery1.11.0 
-09:55:17.803 DEBUG 完成外部脚本引用处理! 
-09:55:17.803 DEBUG 输出scriptData 
-09:55:17.803 DEBUG 判断是否可以输出Html! 
-09:55:17.803 DEBUG 还有没有经过处理的资源! 
-09:55:17.931 INFO  使用postcss处理完毕! 用时: 209 毫秒 
-09:55:17.931 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .one:",".one[template=two]:"],["[template=two] .one ",".one[template=two] "],["[template=two] .one{",".one[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
-09:55:17.931 DEBUG 判断是否可以输出Html! 
-09:55:17.931 DEBUG 准备输出html! 
-09:55:17.931 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:55:17.931 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-09:55:17.931 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:55:17.931 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-09:55:17.931 DEBUG 开始美化html 
-09:55:17.937 INFO  发送重新页面需要刷新命令! 
-09:55:17.945 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
-09:55:24.679 INFO  file change: D:\work\Children's Day\src\page\one.page 
-09:55:24.680 INFO  --------------------------- 开始编译 --------------------------- 
-09:55:24.680 INFO  程序运行目录: D:\work\Children's Day 
-09:55:24.680 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\one.page 
-09:55:24.680 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
-09:55:24.680 DEBUG 读取网页标题: 页面 
-09:55:24.680 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
-09:55:24.680 INFO  开始处理模块: one 
-09:55:24.680 DEBUG 处理模板: ./src/page/one.page 
-09:55:24.693 DEBUG 发现 keyframes 规则: fadeIn 
-09:55:24.693 DEBUG 发现 keyframes 规则: fadeIn2 
-09:55:24.693 DEBUG 发现 keyframes 规则: short 
-09:55:24.693 DEBUG 缓存模板: one./src/page/one.page 
-09:55:24.693 DEBUG 模板one处理用时: 13 毫秒! 
-09:55:24.693 INFO  开始处理模块: two 
-09:55:24.693 DEBUG 处理模板: ./src/page/two.page 
-09:55:24.714 DEBUG 发现 keyframes 规则: fadeIn 
-09:55:24.714 DEBUG 发现 keyframes 规则: fadeIn2 
-09:55:24.714 DEBUG 发现 keyframes 规则: short 
-09:55:24.714 DEBUG 缓存模板: two./src/page/two.page 
-09:55:24.714 DEBUG 模板two处理用时: 21 毫秒! 
-09:55:24.715 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-09:55:24.715 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-09:55:24.715 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:55:24.715 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-09:55:24.715 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-09:55:24.715 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-09:55:24.715 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-09:55:24.715 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-09:55:24.715 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-09:55:24.715 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-09:55:24.715 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:55:24.715 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-09:55:24.715 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-09:55:24.715 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-09:55:24.715 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-09:55:24.715 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-09:55:24.715 INFO  css中的资源处理完毕! 
-09:55:24.715 DEBUG 使用postcss处理样式，使用了2个插件! 
-09:55:24.725 INFO  正在处理script! 
-09:55:24.725 INFO  工程中包含多个页面! 
-09:55:24.726 DEBUG 页面中不包含切换动画! 
-09:55:24.842 INFO  js中的资源处理完毕! 
-09:55:24.843 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
-09:55:24.843 DEBUG 外部脚本数量: 1 
-09:55:24.843 DEBUG 处理脚本: jquery1.11.0 
-09:55:24.843 DEBUG 网络脚本: jquery1.11.0 
-09:55:24.843 DEBUG 完成外部脚本引用处理! 
-09:55:24.843 DEBUG 输出scriptData 
-09:55:24.843 DEBUG 判断是否可以输出Html! 
-09:55:24.843 DEBUG 还有没有经过处理的资源! 
-09:55:24.986 INFO  使用postcss处理完毕! 用时: 271 毫秒 
-09:55:24.986 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .one:",".one[template=two]:"],["[template=two] .one ",".one[template=two] "],["[template=two] .one{",".one[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
-09:55:24.986 DEBUG 判断是否可以输出Html! 
-09:55:24.986 DEBUG 准备输出html! 
-09:55:24.986 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:55:24.986 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-09:55:24.986 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:55:24.986 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-09:55:24.986 DEBUG 开始美化html 
-09:55:24.993 INFO  发送重新页面需要刷新命令! 
-09:55:24.995 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
-09:55:28.327 INFO  file change: D:\work\Children's Day\src\main.js 
-09:55:28.327 INFO  --------------------------- 开始编译 --------------------------- 
-09:55:28.327 INFO  程序运行目录: D:\work\Children's Day 
-09:55:28.327 INFO  刷新模式,变化目录: D:\work\Children's Day\src\main.js 
-09:55:28.327 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
-09:55:28.327 DEBUG 读取网页标题: 页面 
-09:55:28.327 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
-09:55:28.327 INFO  开始处理模块: one 
-09:55:28.327 DEBUG 处理模板: ./src/page/one.page 
-09:55:28.339 DEBUG 发现 keyframes 规则: fadeIn 
-09:55:28.339 DEBUG 发现 keyframes 规则: fadeIn2 
-09:55:28.339 DEBUG 发现 keyframes 规则: short 
-09:55:28.339 DEBUG 缓存模板: one./src/page/one.page 
-09:55:28.339 DEBUG 模板one处理用时: 12 毫秒! 
-09:55:28.339 INFO  开始处理模块: two 
-09:55:28.339 DEBUG 处理模板: ./src/page/two.page 
-09:55:28.350 DEBUG 发现 keyframes 规则: fadeIn 
-09:55:28.350 DEBUG 发现 keyframes 规则: fadeIn2 
-09:55:28.350 DEBUG 发现 keyframes 规则: short 
-09:55:28.350 DEBUG 缓存模板: two./src/page/two.page 
-09:55:28.350 DEBUG 模板two处理用时: 11 毫秒! 
-09:55:28.351 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-09:55:28.351 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-09:55:28.351 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:55:28.351 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-09:55:28.351 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-09:55:28.351 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-09:55:28.351 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-09:55:28.351 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-09:55:28.351 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-09:55:28.351 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-09:55:28.351 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:55:28.351 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-09:55:28.351 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-09:55:28.351 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-09:55:28.351 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-09:55:28.351 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-09:55:28.351 INFO  css中的资源处理完毕! 
-09:55:28.351 DEBUG 使用postcss处理样式，使用了2个插件! 
-09:55:28.354 INFO  正在处理script! 
-09:55:28.355 INFO  工程中包含多个页面! 
-09:55:28.355 DEBUG 页面中不包含切换动画! 
-09:55:28.413 INFO  js中的资源处理完毕! 
-09:55:28.413 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
-09:55:28.413 DEBUG 外部脚本数量: 1 
-09:55:28.413 DEBUG 处理脚本: jquery1.11.0 
-09:55:28.414 DEBUG 网络脚本: jquery1.11.0 
-09:55:28.414 DEBUG 完成外部脚本引用处理! 
-09:55:28.414 DEBUG 输出scriptData 
-09:55:28.414 DEBUG 判断是否可以输出Html! 
-09:55:28.414 DEBUG 还有没有经过处理的资源! 
-09:55:28.543 INFO  使用postcss处理完毕! 用时: 192 毫秒 
-09:55:28.543 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .one:",".one[template=two]:"],["[template=two] .one ",".one[template=two] "],["[template=two] .one{",".one[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
-09:55:28.544 DEBUG 判断是否可以输出Html! 
-09:55:28.544 DEBUG 准备输出html! 
-09:55:28.544 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:55:28.544 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-09:55:28.544 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:55:28.544 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-09:55:28.544 DEBUG 开始美化html 
-09:55:28.549 INFO  发送重新页面需要刷新命令! 
-09:55:28.568 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
-09:59:33.953 INFO  file change: D:\work\Children's Day\src\page\one.page 
-09:59:33.954 INFO  --------------------------- 开始编译 --------------------------- 
-09:59:33.954 INFO  程序运行目录: D:\work\Children's Day 
-09:59:33.954 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\one.page 
-09:59:33.954 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
-09:59:33.954 DEBUG 读取网页标题: 页面 
-09:59:33.954 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
-09:59:33.954 INFO  开始处理模块: one 
-09:59:33.954 DEBUG 处理模板: ./src/page/one.page 
-09:59:33.970 DEBUG 发现 keyframes 规则: fadeIn 
-09:59:33.970 DEBUG 发现 keyframes 规则: fadeIn2 
-09:59:33.970 DEBUG 发现 keyframes 规则: short 
-09:59:33.970 DEBUG 缓存模板: one./src/page/one.page 
-09:59:33.970 DEBUG 模板one处理用时: 16 毫秒! 
-09:59:33.970 INFO  开始处理模块: two 
-09:59:33.971 DEBUG 处理模板: ./src/page/two.page 
-09:59:33.985 DEBUG 发现 keyframes 规则: fadeIn 
-09:59:33.985 DEBUG 发现 keyframes 规则: fadeIn2 
-09:59:33.985 DEBUG 发现 keyframes 规则: short 
-09:59:33.985 DEBUG 缓存模板: two./src/page/two.page 
-09:59:33.985 DEBUG 模板two处理用时: 14 毫秒! 
-09:59:33.986 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-09:59:33.986 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-09:59:33.986 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:59:33.986 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-09:59:33.986 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-09:59:33.986 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-09:59:33.986 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-09:59:33.986 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-09:59:33.986 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-09:59:33.986 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-09:59:33.986 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:59:33.986 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-09:59:33.986 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-09:59:33.986 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-09:59:33.986 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-09:59:33.986 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-09:59:33.986 INFO  css中的资源处理完毕! 
-09:59:33.986 DEBUG 使用postcss处理样式，使用了2个插件! 
-09:59:33.991 INFO  正在处理script! 
-09:59:33.992 INFO  工程中包含多个页面! 
-09:59:33.992 DEBUG 页面中不包含切换动画! 
-09:59:34.098 INFO  js中的资源处理完毕! 
-09:59:34.099 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
-09:59:34.099 DEBUG 外部脚本数量: 1 
-09:59:34.099 DEBUG 处理脚本: jquery1.11.0 
-09:59:34.099 DEBUG 网络脚本: jquery1.11.0 
-09:59:34.099 DEBUG 完成外部脚本引用处理! 
-09:59:34.099 DEBUG 输出scriptData 
-09:59:34.099 DEBUG 判断是否可以输出Html! 
-09:59:34.099 DEBUG 还有没有经过处理的资源! 
-09:59:34.227 INFO  使用postcss处理完毕! 用时: 241 毫秒 
-09:59:34.228 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .one:",".one[template=two]:"],["[template=two] .one ",".one[template=two] "],["[template=two] .one{",".one[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
-09:59:34.228 DEBUG 判断是否可以输出Html! 
-09:59:34.228 DEBUG 准备输出html! 
-09:59:34.228 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:59:34.228 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-09:59:34.228 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-09:59:34.228 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-09:59:34.228 DEBUG 处理资源: D:\work\Children's Day\src\resource\logo.png 
-09:59:34.228 DEBUG 开始美化html 
-09:59:34.235 INFO  发送重新页面需要刷新命令! 
-09:59:34.240 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
-09:59:34.310 DEBUG 文件处理成功: 
-09:59:34.310 DEBUG D:\work\Children's Day\dist\static\resource\logo.png 
-10:00:27.766 INFO  file change: D:\work\Children's Day\src\page\one.page 
-10:00:27.766 INFO  --------------------------- 开始编译 --------------------------- 
-10:00:27.766 INFO  程序运行目录: D:\work\Children's Day 
-10:00:27.766 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\one.page 
-10:00:27.766 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
-10:00:27.767 DEBUG 读取网页标题: 页面 
-10:00:27.767 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
-10:00:27.767 INFO  开始处理模块: one 
-10:00:27.767 DEBUG 处理模板: ./src/page/one.page 
-10:00:27.780 DEBUG 发现 keyframes 规则: fadeIn 
-10:00:27.780 DEBUG 发现 keyframes 规则: fadeIn2 
-10:00:27.780 DEBUG 发现 keyframes 规则: short 
-10:00:27.780 DEBUG 缓存模板: one./src/page/one.page 
-10:00:27.780 DEBUG 模板one处理用时: 13 毫秒! 
-10:00:27.780 INFO  开始处理模块: two 
-10:00:27.780 DEBUG 处理模板: ./src/page/two.page 
-10:00:27.795 DEBUG 发现 keyframes 规则: fadeIn 
-10:00:27.795 DEBUG 发现 keyframes 规则: fadeIn2 
-10:00:27.795 DEBUG 发现 keyframes 规则: short 
-10:00:27.795 DEBUG 缓存模板: two./src/page/two.page 
-10:00:27.795 DEBUG 模板two处理用时: 15 毫秒! 
-10:00:27.796 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-10:00:27.796 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-10:00:27.796 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:00:27.796 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-10:00:27.796 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-10:00:27.796 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-10:00:27.796 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-10:00:27.796 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-10:00:27.796 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-10:00:27.796 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-10:00:27.796 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:00:27.796 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-10:00:27.796 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-10:00:27.796 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-10:00:27.796 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-10:00:27.796 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-10:00:27.796 INFO  css中的资源处理完毕! 
-10:00:27.796 DEBUG 使用postcss处理样式，使用了2个插件! 
-10:00:27.801 INFO  正在处理script! 
-10:00:27.801 INFO  工程中包含多个页面! 
-10:00:27.802 DEBUG 页面中不包含切换动画! 
-10:00:27.870 INFO  js中的资源处理完毕! 
-10:00:27.870 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
-10:00:27.870 DEBUG 外部脚本数量: 1 
-10:00:27.870 DEBUG 处理脚本: jquery1.11.0 
-10:00:27.870 DEBUG 网络脚本: jquery1.11.0 
-10:00:27.870 DEBUG 完成外部脚本引用处理! 
-10:00:27.870 DEBUG 输出scriptData 
-10:00:27.871 DEBUG 判断是否可以输出Html! 
-10:00:27.871 DEBUG 还有没有经过处理的资源! 
-10:00:27.991 INFO  使用postcss处理完毕! 用时: 195 毫秒 
-10:00:27.991 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .one:",".one[template=two]:"],["[template=two] .one ",".one[template=two] "],["[template=two] .one{",".one[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
-10:00:27.991 DEBUG 判断是否可以输出Html! 
-10:00:27.991 DEBUG 准备输出html! 
-10:00:27.992 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
-10:00:27.992 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:00:27.992 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-10:00:27.992 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:00:27.992 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-10:00:27.992 DEBUG 开始美化html 
-10:00:27.995 INFO  发送重新页面需要刷新命令! 
-10:00:28.016 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
-10:02:40.549 INFO  file change: D:\work\Children's Day\src\page\one.page 
-10:02:40.549 INFO  --------------------------- 开始编译 --------------------------- 
-10:02:40.549 INFO  程序运行目录: D:\work\Children's Day 
-10:02:40.549 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\one.page 
-10:02:40.550 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
-10:02:40.550 DEBUG 读取网页标题: 页面 
-10:02:40.550 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
-10:02:40.550 INFO  开始处理模块: one 
-10:02:40.550 DEBUG 处理模板: ./src/page/one.page 
-10:02:40.567 DEBUG 发现 keyframes 规则: fadeIn 
-10:02:40.567 DEBUG 发现 keyframes 规则: fadeIn2 
-10:02:40.567 DEBUG 发现 keyframes 规则: short 
-10:02:40.567 DEBUG 缓存模板: one./src/page/one.page 
-10:02:40.567 DEBUG 模板one处理用时: 17 毫秒! 
-10:02:40.567 INFO  开始处理模块: two 
-10:02:40.567 DEBUG 处理模板: ./src/page/two.page 
-10:02:40.585 DEBUG 发现 keyframes 规则: fadeIn 
-10:02:40.585 DEBUG 发现 keyframes 规则: fadeIn2 
-10:02:40.585 DEBUG 发现 keyframes 规则: short 
-10:02:40.585 DEBUG 缓存模板: two./src/page/two.page 
-10:02:40.585 DEBUG 模板two处理用时: 18 毫秒! 
-10:02:40.586 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-10:02:40.586 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-10:02:40.586 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:02:40.586 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-10:02:40.586 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-10:02:40.586 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-10:02:40.586 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-10:02:40.586 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-10:02:40.586 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-10:02:40.586 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-10:02:40.586 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:02:40.586 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-10:02:40.586 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-10:02:40.586 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-10:02:40.586 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-10:02:40.586 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-10:02:40.586 INFO  css中的资源处理完毕! 
-10:02:40.586 DEBUG 使用postcss处理样式，使用了2个插件! 
-10:02:40.591 INFO  正在处理script! 
-10:02:40.592 INFO  工程中包含多个页面! 
-10:02:40.592 DEBUG 页面中不包含切换动画! 
-10:02:40.713 INFO  js中的资源处理完毕! 
-10:02:40.713 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
-10:02:40.713 DEBUG 外部脚本数量: 1 
-10:02:40.713 DEBUG 处理脚本: jquery1.11.0 
-10:02:40.713 DEBUG 网络脚本: jquery1.11.0 
-10:02:40.713 DEBUG 完成外部脚本引用处理! 
-10:02:40.713 DEBUG 输出scriptData 
-10:02:40.713 DEBUG 判断是否可以输出Html! 
-10:02:40.713 DEBUG 还有没有经过处理的资源! 
-10:02:40.841 INFO  使用postcss处理完毕! 用时: 255 毫秒 
-10:02:40.841 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .one:",".one[template=two]:"],["[template=two] .one ",".one[template=two] "],["[template=two] .one{",".one[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
-10:02:40.841 DEBUG 判断是否可以输出Html! 
-10:02:40.842 DEBUG 准备输出html! 
-10:02:40.842 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
-10:02:40.842 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:02:40.842 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-10:02:40.842 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:02:40.842 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-10:02:40.842 DEBUG 开始美化html 
-10:02:40.847 INFO  发送重新页面需要刷新命令! 
-10:02:40.849 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
-10:03:14.310 INFO  file change: D:\work\Children's Day\src\page\one.page 
-10:03:14.310 INFO  --------------------------- 开始编译 --------------------------- 
-10:03:14.310 INFO  程序运行目录: D:\work\Children's Day 
-10:03:14.310 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\one.page 
-10:03:14.310 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
-10:03:14.310 DEBUG 读取网页标题: 页面 
-10:03:14.310 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
-10:03:14.310 INFO  开始处理模块: one 
-10:03:14.310 DEBUG 处理模板: ./src/page/one.page 
-10:03:14.326 DEBUG 发现 keyframes 规则: fadeIn 
-10:03:14.326 DEBUG 发现 keyframes 规则: fadeIn2 
-10:03:14.326 DEBUG 发现 keyframes 规则: short 
-10:03:14.327 DEBUG 缓存模板: one./src/page/one.page 
-10:03:14.327 DEBUG 模板one处理用时: 17 毫秒! 
-10:03:14.327 INFO  开始处理模块: two 
-10:03:14.327 DEBUG 处理模板: ./src/page/two.page 
-10:03:14.343 DEBUG 发现 keyframes 规则: fadeIn 
-10:03:14.343 DEBUG 发现 keyframes 规则: fadeIn2 
-10:03:14.343 DEBUG 发现 keyframes 规则: short 
-10:03:14.343 DEBUG 缓存模板: two./src/page/two.page 
-10:03:14.343 DEBUG 模板two处理用时: 16 毫秒! 
-10:03:14.344 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-10:03:14.344 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-10:03:14.344 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:03:14.344 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-10:03:14.344 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-10:03:14.344 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-10:03:14.344 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-10:03:14.345 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-10:03:14.345 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-10:03:14.345 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-10:03:14.345 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:03:14.345 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-10:03:14.345 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-10:03:14.345 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-10:03:14.345 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-10:03:14.345 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-10:03:14.345 INFO  css中的资源处理完毕! 
-10:03:14.345 DEBUG 使用postcss处理样式，使用了2个插件! 
-10:03:14.348 INFO  正在处理script! 
-10:03:14.349 INFO  工程中包含多个页面! 
-10:03:14.349 DEBUG 页面中不包含切换动画! 
-10:03:14.419 INFO  js中的资源处理完毕! 
-10:03:14.420 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
-10:03:14.420 DEBUG 外部脚本数量: 1 
-10:03:14.420 DEBUG 处理脚本: jquery1.11.0 
-10:03:14.420 DEBUG 网络脚本: jquery1.11.0 
-10:03:14.420 DEBUG 完成外部脚本引用处理! 
-10:03:14.420 DEBUG 输出scriptData 
-10:03:14.420 DEBUG 判断是否可以输出Html! 
-10:03:14.420 DEBUG 还有没有经过处理的资源! 
-10:03:14.540 INFO  使用postcss处理完毕! 用时: 195 毫秒 
-10:03:14.540 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .one:",".one[template=two]:"],["[template=two] .one ",".one[template=two] "],["[template=two] .one{",".one[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
-10:03:14.540 DEBUG 判断是否可以输出Html! 
-10:03:14.540 DEBUG 准备输出html! 
-10:03:14.540 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
-10:03:14.540 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:03:14.540 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-10:03:14.540 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:03:14.540 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-10:03:14.540 DEBUG 开始美化html 
-10:03:14.547 INFO  发送重新页面需要刷新命令! 
-10:03:14.565 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
-10:03:42.955 INFO  file change: D:\work\Children's Day\src\page\two.page 
-10:03:42.956 INFO  --------------------------- 开始编译 --------------------------- 
-10:03:42.956 INFO  程序运行目录: D:\work\Children's Day 
-10:03:42.956 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
-10:03:42.956 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
-10:03:42.956 DEBUG 读取网页标题: 页面 
-10:03:42.956 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
-10:03:42.956 INFO  开始处理模块: one 
-10:03:42.956 DEBUG 处理模板: ./src/page/one.page 
-10:03:42.972 DEBUG 发现 keyframes 规则: fadeIn 
-10:03:42.972 DEBUG 发现 keyframes 规则: fadeIn2 
-10:03:42.972 DEBUG 发现 keyframes 规则: short 
-10:03:42.972 DEBUG 缓存模板: one./src/page/one.page 
-10:03:42.972 DEBUG 模板one处理用时: 16 毫秒! 
-10:03:42.972 INFO  开始处理模块: two 
-10:03:42.972 DEBUG 处理模板: ./src/page/two.page 
-10:03:42.986 DEBUG 发现 keyframes 规则: fadeIn 
-10:03:42.986 DEBUG 发现 keyframes 规则: fadeIn2 
-10:03:42.986 DEBUG 发现 keyframes 规则: short 
-10:03:42.986 DEBUG 缓存模板: two./src/page/two.page 
-10:03:42.986 DEBUG 模板two处理用时: 14 毫秒! 
-10:03:42.986 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-10:03:42.987 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-10:03:42.987 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:03:42.987 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-10:03:42.987 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-10:03:42.987 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-10:03:42.987 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-10:03:42.987 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-10:03:42.987 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-10:03:42.987 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-10:03:42.987 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:03:42.987 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-10:03:42.987 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-10:03:42.987 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-10:03:42.987 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-10:03:42.987 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-10:03:42.987 INFO  css中的资源处理完毕! 
-10:03:42.987 DEBUG 使用postcss处理样式，使用了2个插件! 
-10:03:42.993 INFO  正在处理script! 
-10:03:42.994 INFO  工程中包含多个页面! 
-10:03:42.994 DEBUG 页面中不包含切换动画! 
-10:03:43.109 INFO  js中的资源处理完毕! 
-10:03:43.110 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
-10:03:43.110 DEBUG 外部脚本数量: 1 
-10:03:43.110 DEBUG 处理脚本: jquery1.11.0 
-10:03:43.110 DEBUG 网络脚本: jquery1.11.0 
-10:03:43.110 DEBUG 完成外部脚本引用处理! 
-10:03:43.110 DEBUG 输出scriptData 
-10:03:43.110 DEBUG 判断是否可以输出Html! 
-10:03:43.110 DEBUG 还有没有经过处理的资源! 
-10:03:43.250 INFO  使用postcss处理完毕! 用时: 263 毫秒 
-10:03:43.250 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .one:",".one[template=two]:"],["[template=two] .one ",".one[template=two] "],["[template=two] .one{",".one[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
-10:03:43.250 DEBUG 判断是否可以输出Html! 
-10:03:43.250 DEBUG 准备输出html! 
-10:03:43.250 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
-10:03:43.250 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:03:43.250 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-10:03:43.250 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:03:43.250 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-10:03:43.250 DEBUG 开始美化html 
-10:03:43.257 INFO  发送重新页面需要刷新命令! 
-10:03:43.258 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
-10:03:48.076 INFO  file change: D:\work\Children's Day\src\page\one.page 
-10:03:48.076 INFO  --------------------------- 开始编译 --------------------------- 
-10:03:48.076 INFO  程序运行目录: D:\work\Children's Day 
-10:03:48.076 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\one.page 
-10:03:48.076 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
-10:03:48.076 DEBUG 读取网页标题: 页面 
-10:03:48.076 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
-10:03:48.076 INFO  开始处理模块: one 
-10:03:48.076 DEBUG 处理模板: ./src/page/one.page 
-10:03:48.087 DEBUG 发现 keyframes 规则: fadeIn 
-10:03:48.087 DEBUG 发现 keyframes 规则: fadeIn2 
-10:03:48.087 DEBUG 发现 keyframes 规则: short 
-10:03:48.088 DEBUG 缓存模板: one./src/page/one.page 
-10:03:48.088 DEBUG 模板one处理用时: 12 毫秒! 
-10:03:48.088 INFO  开始处理模块: two 
-10:03:48.088 DEBUG 处理模板: ./src/page/two.page 
-10:03:48.100 DEBUG 发现 keyframes 规则: fadeIn 
-10:03:48.100 DEBUG 发现 keyframes 规则: fadeIn2 
-10:03:48.100 DEBUG 发现 keyframes 规则: short 
-10:03:48.100 DEBUG 缓存模板: two./src/page/two.page 
-10:03:48.100 DEBUG 模板two处理用时: 12 毫秒! 
-10:03:48.101 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-10:03:48.101 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-10:03:48.101 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:03:48.101 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-10:03:48.101 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-10:03:48.101 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-10:03:48.101 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-10:03:48.101 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-10:03:48.101 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-10:03:48.101 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-10:03:48.101 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:03:48.101 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-10:03:48.101 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-10:03:48.101 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-10:03:48.101 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-10:03:48.101 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-10:03:48.101 INFO  css中的资源处理完毕! 
-10:03:48.101 DEBUG 使用postcss处理样式，使用了2个插件! 
-10:03:48.104 INFO  正在处理script! 
-10:03:48.104 INFO  工程中包含多个页面! 
-10:03:48.104 DEBUG 页面中不包含切换动画! 
-10:03:48.187 INFO  js中的资源处理完毕! 
-10:03:48.188 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
-10:03:48.188 DEBUG 外部脚本数量: 1 
-10:03:48.188 DEBUG 处理脚本: jquery1.11.0 
-10:03:48.188 DEBUG 网络脚本: jquery1.11.0 
-10:03:48.188 DEBUG 完成外部脚本引用处理! 
-10:03:48.188 DEBUG 输出scriptData 
-10:03:48.188 DEBUG 判断是否可以输出Html! 
-10:03:48.188 DEBUG 还有没有经过处理的资源! 
-10:03:48.305 INFO  使用postcss处理完毕! 用时: 204 毫秒 
-10:03:48.305 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .one:",".one[template=two]:"],["[template=two] .one ",".one[template=two] "],["[template=two] .one{",".one[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
-10:03:48.306 DEBUG 判断是否可以输出Html! 
-10:03:48.306 DEBUG 准备输出html! 
-10:03:48.306 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
-10:03:48.306 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:03:48.306 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-10:03:48.306 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:03:48.306 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-10:03:48.306 DEBUG 开始美化html 
-10:03:48.311 INFO  发送重新页面需要刷新命令! 
-10:03:48.318 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
-10:04:39.152 INFO  file change: D:\work\Children's Day\src\page\one.page 
-10:04:39.153 INFO  --------------------------- 开始编译 --------------------------- 
-10:04:39.153 INFO  程序运行目录: D:\work\Children's Day 
-10:04:39.153 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\one.page 
-10:04:39.153 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
-10:04:39.153 DEBUG 读取网页标题: 页面 
-10:04:39.153 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
-10:04:39.153 INFO  开始处理模块: one 
-10:04:39.153 DEBUG 处理模板: ./src/page/one.page 
-10:04:39.170 DEBUG 发现 keyframes 规则: fadeIn 
-10:04:39.170 DEBUG 发现 keyframes 规则: fadeIn2 
-10:04:39.170 DEBUG 发现 keyframes 规则: short 
-10:04:39.170 DEBUG 缓存模板: one./src/page/one.page 
-10:04:39.170 DEBUG 模板one处理用时: 17 毫秒! 
-10:04:39.170 INFO  开始处理模块: two 
-10:04:39.170 DEBUG 处理模板: ./src/page/two.page 
-10:04:39.183 DEBUG 发现 keyframes 规则: fadeIn 
-10:04:39.183 DEBUG 发现 keyframes 规则: fadeIn2 
-10:04:39.184 DEBUG 发现 keyframes 规则: short 
-10:04:39.184 DEBUG 缓存模板: two./src/page/two.page 
-10:04:39.184 DEBUG 模板two处理用时: 14 毫秒! 
-10:04:39.185 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-10:04:39.185 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-10:04:39.185 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:04:39.185 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-10:04:39.185 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-10:04:39.185 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-10:04:39.185 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-10:04:39.185 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-10:04:39.185 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
-10:04:39.185 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
-10:04:39.185 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:04:39.185 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
-10:04:39.185 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
-10:04:39.185 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
-10:04:39.185 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
-10:04:39.185 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
-10:04:39.185 INFO  css中的资源处理完毕! 
-10:04:39.185 DEBUG 使用postcss处理样式，使用了2个插件! 
-10:04:39.192 INFO  正在处理script! 
-10:04:39.192 INFO  工程中包含多个页面! 
-10:04:39.193 DEBUG 页面中不包含切换动画! 
-10:04:39.298 INFO  js中的资源处理完毕! 
-10:04:39.299 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
-10:04:39.299 DEBUG 外部脚本数量: 1 
-10:04:39.299 DEBUG 处理脚本: jquery1.11.0 
-10:04:39.299 DEBUG 网络脚本: jquery1.11.0 
-10:04:39.299 DEBUG 完成外部脚本引用处理! 
-10:04:39.299 DEBUG 输出scriptData 
-10:04:39.299 DEBUG 判断是否可以输出Html! 
-10:04:39.299 DEBUG 还有没有经过处理的资源! 
-10:04:39.425 INFO  使用postcss处理完毕! 用时: 240 毫秒 
-10:04:39.425 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .one:",".one[template=two]:"],["[template=two] .one ",".one[template=two] "],["[template=two] .one{",".one[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
-10:04:39.426 DEBUG 判断是否可以输出Html! 
-10:04:39.426 DEBUG 准备输出html! 
-10:04:39.426 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
-10:04:39.426 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:04:39.426 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-10:04:39.426 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
-10:04:39.426 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
-10:04:39.426 DEBUG 开始美化html 
-10:04:39.434 INFO  发送重新页面需要刷新命令! 
-10:04:39.436 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+10:36:59.776 DEBUG 获取到配置信息: 
+10:36:59.776 DEBUG {"basePath":"./","watcher":{"enable":true,"ignored":"./dist/*","depth":99},"outPut":{"minifyCss":false,"minifyJs":false,"addVersion":false},"serverPort":8000,"server":true,"autoReload":true,"remoteDebug":false,"root":"/src","entry":"one","title":"页面","outFolder":"./dist","resourceFolder":"./src/resource","headList":[{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}],"scriptList":[{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}],"styleList":[{"name":"main","src":"./src/main.css","resource":true}],"pageList":[{"main":true,"isPage":true,"name":"one","src":"./src/page/one.page","temple":"<temple name=\"one\" src=\"./src/page/one.page\" isPage=\"true\"></temple>","outerHTML":"<!DOCTYPE html>\r\n<html lang=\"zh-CN\">\r\n  <head>\r\n    <title>页面</title>\r\n    <!-- 页面的元信息 -->\r\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"/>\r\n    <meta name=\"viewport\" content=\"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no\"/>\r\n    <!-- css-output -->\r\n    <!-- animation-output -->\r\n  </head>\r\n  <body>\r\n    <!-- 页面区域 -->\r\n    <temple name=\"one\" src=\"./src/page/one.page\" isPage=\"true\"></temple>\r\n    <temple name=\"two\" src=\"./src/page/two.page\" isPage=\"true\"></temple>\r\n    <!-- script-output -->\r\n  </body>\r\n</html>"},{"isPage":true,"name":"two","src":"./src/page/two.page","temple":"<temple name=\"two\" src=\"./src/page/two.page\" isPage=\"true\"></temple>","outerHTML":"<!DOCTYPE html>\r\n<html lang=\"zh-CN\">\r\n  <head>\r\n    <title>页面</title>\r\n    <!-- 页面的元信息 -->\r\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"/>\r\n    <meta name=\"viewport\" content=\"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no\"/>\r\n    <!-- css-output -->\r\n    <!-- animation-output -->\r\n  </head>\r\n  <body>\r\n    <!-- 页面区域 -->\r\n    <div class=\"one ox\" template=\"one\" id=\"o-one\" style=\"display: none;\">\n    <div class=\"box\">\n      <!-- 顶部小图钉 -->\n      <div class=\"nail\"></div>\n      <img class=\"logo\" src=\"@&amp;logo.png&amp;\">\n      <!-- 卷轴区域 -->\n      <div class=\"title\">\n        <div class=\"left\"></div>\n        <div class=\"middle\"></div>\n        <div class=\"right\"></div>\n      </div>\n      <!-- 编者按 -->\n      <img class=\"editor\" src=\"@&amp;editor.png&amp;\">\n      <img class=\"message\" src=\"@&amp;message.png&amp;\">\n      <div class=\"hand\"></div>\n      <!-- 文字区域 -->\n      <div class=\"text-box\">\n        <div class=\"shelter\"></div>\n      </div>\n      <!-- 底部按钮区域 -->\n      <div class=\"button-box\" @click=\"two\">\n        <div class=\"button-1 button\"></div>\n        <div class=\"button-2 button\"></div>\n        <div class=\"button-3 button\"></div>\n      </div>\n    </div>\n  </div>\r\n    <temple name=\"two\" src=\"./src/page/two.page\" isPage=\"true\"></temple>\r\n    <!-- script-output -->\r\n  </body>\r\n</html>"}],"dev":{"basePath":"./","watcher":{"enable":true,"ignored":"./dist/*","depth":99},"outPut":{"minifyCss":false,"minifyJs":false,"addVersion":false},"serverPort":8000,"server":true,"autoReload":true,"remoteDebug":false},"build":{"basePath":"./","outPut":{"minifyCss":true,"minifyJs":true,"addVersion":true,"embedSize":10,"merge":false}}} 
+10:36:59.776 INFO  --------------------------- 开始编译 --------------------------- 
+10:36:59.776 INFO  程序运行目录: D:\work\Children's Day 
+10:36:59.776 INFO  首次启动! 
+10:36:59.776 INFO  生成版本号: 0nr0c6581f4f 
+10:36:59.784 INFO  清理资源文件夹: D:\work\Children's Day\dist\static 
+10:36:59.784 INFO  文件夹不存在: D:\work\Children's Day\dist\static 
+10:36:59.784 INFO  创建文件夹: D:\work\Children's Day\dist\static 
+10:36:59.784 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+10:36:59.785 DEBUG 读取网页标题: 页面 
+10:36:59.785 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+10:36:59.785 INFO  开始处理模块: one 
+10:36:59.786 DEBUG 处理模板: ./src/page/one.page 
+10:36:59.890 DEBUG 发现 keyframes 规则: fadeIn 
+10:36:59.890 DEBUG 发现 keyframes 规则: fadeIn2 
+10:36:59.890 DEBUG 发现 keyframes 规则: short 
+10:36:59.891 DEBUG 缓存模板: one./src/page/one.page 
+10:36:59.891 DEBUG 模板one处理用时: 105 毫秒! 
+10:36:59.891 INFO  开始处理模块: two 
+10:36:59.891 DEBUG 处理模板: ./src/page/two.page 
+10:36:59.896 DEBUG 缓存模板: two./src/page/two.page 
+10:36:59.896 DEBUG 模板two处理用时: 5 毫秒! 
+10:36:59.897 INFO  文件夹不存在: D:\work\Children's Day\dist\static\resource 
+10:36:59.898 INFO  创建文件夹: D:\work\Children's Day\dist\static\resource 
+10:36:59.898 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:36:59.898 DEBUG 处理资源: D:\work\Children's Day\src\resource\scroll-text.png,D:\work\Children's Day\src\resource\scroll.png,D:\work\Children's Day\src\resource\editor.png,D:\work\Children's Day\src\resource\hand.png,D:\work\Children's Day\src\resource\button-1.png,D:\work\Children's Day\src\resource\button-2.png,D:\work\Children's Day\src\resource\button-3.png,D:\work\Children's Day\src\resource\text.png,D:\work\Children's Day\src\resource\scroll-2.png 
+10:36:59.900 INFO  css中的资源处理完毕! 
+10:36:59.900 DEBUG 使用postcss处理样式，使用了2个插件! 
+10:36:59.915 INFO  正在处理script! 
+10:36:59.915 INFO  工程中包含多个页面! 
+10:36:59.916 DEBUG 页面中不包含切换动画! 
+10:37:00.657 INFO  文件夹不存在: D:\work\Children's Day\dist\static\js 
+10:37:00.658 INFO  创建文件夹: D:\work\Children's Day\dist\static\js 
+10:37:00.687 INFO  js中的资源处理完毕! 
+10:37:00.688 INFO  读取文件: C:\Users\PG\Documents\GitHub\PG\core\debug\autoReload.js 
+10:37:00.688 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+10:37:00.688 DEBUG 外部脚本数量: 1 
+10:37:00.688 DEBUG 处理脚本: jquery1.11.0 
+10:37:00.688 DEBUG 网络脚本: jquery1.11.0 
+10:37:00.688 DEBUG 完成外部脚本引用处理! 
+10:37:00.688 DEBUG 输出scriptData 
+10:37:00.688 DEBUG 判断是否可以输出Html! 
+10:37:00.688 DEBUG 还有没有经过处理的资源! 
+10:37:00.688 INFO  监控文件夹变化: D:\work\Children's Day\src 
+10:37:00.699 INFO  服务器运行在: 127.0.0.1:8000 
+10:37:00.890 INFO  使用postcss处理完毕! 用时: 990 毫秒 
+10:37:00.890 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+10:37:00.890 INFO  文件夹不存在: D:\work\Children's Day\dist\static\css 
+10:37:00.890 INFO  创建文件夹: D:\work\Children's Day\dist\static\css 
+10:37:00.891 INFO  开始处理附属css中的资源 
+10:37:00.891 INFO  附属css中的资源处理完毕! 
+10:37:00.891 DEBUG 判断是否可以输出Html! 
+10:37:00.891 DEBUG 准备输出html! 
+10:37:00.891 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:37:00.891 DEBUG 处理资源: D:\work\Children's Day\src\resource\logo.png,D:\work\Children's Day\src\resource\message.png 
+10:37:00.892 DEBUG 开始美化html 
+10:37:00.903 INFO  发送重新页面需要刷新命令! 
+10:37:00.940 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+10:37:00.940 INFO  读取成功: C:\Users\PG\Documents\GitHub\PG\core\debug\autoReload.js 
+10:37:00.941 INFO  读取成功: D:\work\Children's Day\src\main.css 
+10:37:00.941 DEBUG 处理资源: D:\work\Children's Day\src\resource\nail.png 
+10:37:00.969 INFO  写入文件: D:\work\Children's Day\dist\static\js\autoReload.js 
+10:37:00.970 INFO  写入文件: D:\work\Children's Day\dist\static\css\main.css 
+10:37:01.060 DEBUG 文件处理成功: 
+10:37:01.060 DEBUG D:\work\Children's Day\dist\static\resource\nail.png 
+10:37:01.086 DEBUG 文件处理成功: 
+10:37:01.086 DEBUG D:\work\Children's Day\dist\static\resource\logo.png 
+10:37:01.086 DEBUG D:\work\Children's Day\dist\static\resource\message.png 
+10:37:01.167 DEBUG 文件处理成功: 
+10:37:01.167 DEBUG D:\work\Children's Day\dist\static\resource\scroll-text.png 
+10:37:01.167 DEBUG D:\work\Children's Day\dist\static\resource\scroll.png 
+10:37:01.167 DEBUG D:\work\Children's Day\dist\static\resource\editor.png 
+10:37:01.167 DEBUG D:\work\Children's Day\dist\static\resource\hand.png 
+10:37:01.167 DEBUG D:\work\Children's Day\dist\static\resource\button-1.png 
+10:37:01.167 DEBUG D:\work\Children's Day\dist\static\resource\button-2.png 
+10:37:01.167 DEBUG D:\work\Children's Day\dist\static\resource\button-3.png 
+10:37:01.167 DEBUG D:\work\Children's Day\dist\static\resource\text.png 
+10:37:01.167 DEBUG D:\work\Children's Day\dist\static\resource\scroll-2.png 
+10:37:11.565 INFO  file change: D:\work\Children's Day\src\page\two.page 
+10:37:11.566 INFO  --------------------------- 开始编译 --------------------------- 
+10:37:11.566 INFO  程序运行目录: D:\work\Children's Day 
+10:37:11.566 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+10:37:11.566 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+10:37:11.566 DEBUG 读取网页标题: 页面 
+10:37:11.566 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+10:37:11.566 INFO  开始处理模块: one 
+10:37:11.566 DEBUG 处理模板: ./src/page/one.page 
+10:37:11.577 DEBUG 发现 keyframes 规则: fadeIn 
+10:37:11.577 DEBUG 发现 keyframes 规则: fadeIn2 
+10:37:11.577 DEBUG 发现 keyframes 规则: short 
+10:37:11.578 DEBUG 缓存模板: one./src/page/one.page 
+10:37:11.578 DEBUG 模板one处理用时: 12 毫秒! 
+10:37:11.578 INFO  开始处理模块: two 
+10:37:11.578 DEBUG 处理模板: ./src/page/two.page 
+10:37:11.583 DEBUG 缓存模板: two./src/page/two.page 
+10:37:11.583 DEBUG 模板two处理用时: 5 毫秒! 
+10:37:11.583 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+10:37:11.583 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+10:37:11.583 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:37:11.583 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+10:37:11.583 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+10:37:11.583 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+10:37:11.583 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+10:37:11.583 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+10:37:11.583 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:37:11.583 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:37:11.583 INFO  css中的资源处理完毕! 
+10:37:11.583 DEBUG 使用postcss处理样式，使用了2个插件! 
+10:37:11.585 INFO  正在处理script! 
+10:37:11.586 INFO  工程中包含多个页面! 
+10:37:11.586 DEBUG 页面中不包含切换动画! 
+10:37:11.667 INFO  js中的资源处理完毕! 
+10:37:11.668 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+10:37:11.668 DEBUG 外部脚本数量: 1 
+10:37:11.668 DEBUG 处理脚本: jquery1.11.0 
+10:37:11.668 DEBUG 网络脚本: jquery1.11.0 
+10:37:11.668 DEBUG 完成外部脚本引用处理! 
+10:37:11.668 DEBUG 输出scriptData 
+10:37:11.668 DEBUG 判断是否可以输出Html! 
+10:37:11.668 DEBUG 还有没有经过处理的资源! 
+10:37:11.786 INFO  使用postcss处理完毕! 用时: 203 毫秒 
+10:37:11.786 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+10:37:11.787 DEBUG 判断是否可以输出Html! 
+10:37:11.787 DEBUG 准备输出html! 
+10:37:11.787 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+10:37:11.787 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:37:11.787 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+10:37:11.787 DEBUG 开始美化html 
+10:37:11.790 INFO  发送重新页面需要刷新命令! 
+10:37:11.791 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+10:38:27.476 INFO  file change: D:\work\Children's Day\src\page\two.page 
+10:38:27.476 INFO  --------------------------- 开始编译 --------------------------- 
+10:38:27.476 INFO  程序运行目录: D:\work\Children's Day 
+10:38:27.476 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+10:38:27.476 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+10:38:27.477 DEBUG 读取网页标题: 页面 
+10:38:27.477 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+10:38:27.477 INFO  开始处理模块: one 
+10:38:27.477 DEBUG 处理模板: ./src/page/one.page 
+10:38:27.495 DEBUG 发现 keyframes 规则: fadeIn 
+10:38:27.495 DEBUG 发现 keyframes 规则: fadeIn2 
+10:38:27.495 DEBUG 发现 keyframes 规则: short 
+10:38:27.495 DEBUG 缓存模板: one./src/page/one.page 
+10:38:27.495 DEBUG 模板one处理用时: 18 毫秒! 
+10:38:27.495 INFO  开始处理模块: two 
+10:38:27.495 DEBUG 处理模板: ./src/page/two.page 
+10:38:27.504 DEBUG 缓存模板: two./src/page/two.page 
+10:38:27.504 DEBUG 模板two处理用时: 9 毫秒! 
+10:38:27.505 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+10:38:27.505 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+10:38:27.505 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:38:27.505 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+10:38:27.505 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+10:38:27.505 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+10:38:27.505 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+10:38:27.505 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+10:38:27.505 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:38:27.505 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:38:27.505 INFO  css中的资源处理完毕! 
+10:38:27.505 DEBUG 使用postcss处理样式，使用了2个插件! 
+10:38:27.509 INFO  正在处理script! 
+10:38:27.510 INFO  工程中包含多个页面! 
+10:38:27.510 DEBUG 页面中不包含切换动画! 
+10:38:27.638 INFO  js中的资源处理完毕! 
+10:38:27.639 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+10:38:27.639 DEBUG 外部脚本数量: 1 
+10:38:27.639 DEBUG 处理脚本: jquery1.11.0 
+10:38:27.639 DEBUG 网络脚本: jquery1.11.0 
+10:38:27.639 DEBUG 完成外部脚本引用处理! 
+10:38:27.639 DEBUG 输出scriptData 
+10:38:27.639 DEBUG 判断是否可以输出Html! 
+10:38:27.639 DEBUG 还有没有经过处理的资源! 
+10:38:27.765 INFO  使用postcss处理完毕! 用时: 260 毫秒 
+10:38:27.765 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+10:38:27.765 DEBUG 判断是否可以输出Html! 
+10:38:27.765 DEBUG 准备输出html! 
+10:38:27.765 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+10:38:27.765 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:38:27.765 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+10:38:27.765 DEBUG 开始美化html 
+10:38:27.773 INFO  发送重新页面需要刷新命令! 
+10:38:27.775 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+10:42:56.846 INFO  file change: D:\work\Children's Day\src\page\two.page 
+10:42:56.847 INFO  --------------------------- 开始编译 --------------------------- 
+10:42:56.847 INFO  程序运行目录: D:\work\Children's Day 
+10:42:56.847 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+10:42:56.847 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+10:42:56.847 DEBUG 读取网页标题: 页面 
+10:42:56.847 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+10:42:56.847 INFO  开始处理模块: one 
+10:42:56.847 DEBUG 处理模板: ./src/page/one.page 
+10:42:56.862 DEBUG 发现 keyframes 规则: fadeIn 
+10:42:56.862 DEBUG 发现 keyframes 规则: fadeIn2 
+10:42:56.862 DEBUG 发现 keyframes 规则: short 
+10:42:56.862 DEBUG 缓存模板: one./src/page/one.page 
+10:42:56.862 DEBUG 模板one处理用时: 15 毫秒! 
+10:42:56.862 INFO  开始处理模块: two 
+10:42:56.862 DEBUG 处理模板: ./src/page/two.page 
+10:42:56.868 DEBUG 缓存模板: two./src/page/two.page 
+10:42:56.868 DEBUG 模板two处理用时: 6 毫秒! 
+10:42:56.869 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+10:42:56.869 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+10:42:56.869 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:42:56.869 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+10:42:56.869 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+10:42:56.869 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+10:42:56.869 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+10:42:56.869 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+10:42:56.869 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:42:56.869 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:42:56.869 INFO  css中的资源处理完毕! 
+10:42:56.869 DEBUG 使用postcss处理样式，使用了2个插件! 
+10:42:56.871 INFO  正在处理script! 
+10:42:56.872 INFO  工程中包含多个页面! 
+10:42:56.873 DEBUG 页面中不包含切换动画! 
+10:42:56.985 INFO  js中的资源处理完毕! 
+10:42:56.985 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+10:42:56.985 DEBUG 外部脚本数量: 1 
+10:42:56.985 DEBUG 处理脚本: jquery1.11.0 
+10:42:56.985 DEBUG 网络脚本: jquery1.11.0 
+10:42:56.985 DEBUG 完成外部脚本引用处理! 
+10:42:56.985 DEBUG 输出scriptData 
+10:42:56.985 DEBUG 判断是否可以输出Html! 
+10:42:56.985 DEBUG 还有没有经过处理的资源! 
+10:42:57.112 INFO  使用postcss处理完毕! 用时: 243 毫秒 
+10:42:57.112 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+10:42:57.112 DEBUG 判断是否可以输出Html! 
+10:42:57.113 DEBUG 准备输出html! 
+10:42:57.113 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+10:42:57.113 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:42:57.113 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+10:42:57.113 DEBUG 开始美化html 
+10:42:57.117 INFO  发送重新页面需要刷新命令! 
+10:42:57.120 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+10:46:28.263 INFO  file change: D:\work\Children's Day\src\page\two.page 
+10:46:28.264 INFO  --------------------------- 开始编译 --------------------------- 
+10:46:28.264 INFO  程序运行目录: D:\work\Children's Day 
+10:46:28.264 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+10:46:28.264 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+10:46:28.264 DEBUG 读取网页标题: 页面 
+10:46:28.264 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+10:46:28.264 INFO  开始处理模块: one 
+10:46:28.264 DEBUG 处理模板: ./src/page/one.page 
+10:46:28.277 DEBUG 发现 keyframes 规则: fadeIn 
+10:46:28.277 DEBUG 发现 keyframes 规则: fadeIn2 
+10:46:28.277 DEBUG 发现 keyframes 规则: short 
+10:46:28.277 DEBUG 缓存模板: one./src/page/one.page 
+10:46:28.277 DEBUG 模板one处理用时: 13 毫秒! 
+10:46:28.277 INFO  开始处理模块: two 
+10:46:28.277 DEBUG 处理模板: ./src/page/two.page 
+10:46:28.282 DEBUG 缓存模板: two./src/page/two.page 
+10:46:28.282 DEBUG 模板two处理用时: 5 毫秒! 
+10:46:28.282 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+10:46:28.282 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+10:46:28.282 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:46:28.282 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+10:46:28.282 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+10:46:28.284 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+10:46:28.284 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+10:46:28.284 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+10:46:28.284 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:46:28.284 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:46:28.284 INFO  css中的资源处理完毕! 
+10:46:28.284 DEBUG 使用postcss处理样式，使用了2个插件! 
+10:46:28.288 INFO  正在处理script! 
+10:46:28.289 INFO  工程中包含多个页面! 
+10:46:28.289 DEBUG 页面中不包含切换动画! 
+10:46:28.374 INFO  js中的资源处理完毕! 
+10:46:28.375 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+10:46:28.375 DEBUG 外部脚本数量: 1 
+10:46:28.375 DEBUG 处理脚本: jquery1.11.0 
+10:46:28.375 DEBUG 网络脚本: jquery1.11.0 
+10:46:28.375 DEBUG 完成外部脚本引用处理! 
+10:46:28.375 DEBUG 输出scriptData 
+10:46:28.375 DEBUG 判断是否可以输出Html! 
+10:46:28.375 DEBUG 还有没有经过处理的资源! 
+10:46:28.495 INFO  使用postcss处理完毕! 用时: 211 毫秒 
+10:46:28.495 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+10:46:28.495 DEBUG 判断是否可以输出Html! 
+10:46:28.495 DEBUG 准备输出html! 
+10:46:28.495 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+10:46:28.495 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:46:28.495 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+10:46:28.495 DEBUG 开始美化html 
+10:46:28.506 INFO  发送重新页面需要刷新命令! 
+10:46:28.511 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+10:49:41.494 INFO  file change: D:\work\Children's Day\src\page\two.page 
+10:49:41.495 INFO  --------------------------- 开始编译 --------------------------- 
+10:49:41.495 INFO  程序运行目录: D:\work\Children's Day 
+10:49:41.495 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+10:49:41.495 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+10:49:41.495 DEBUG 读取网页标题: 页面 
+10:49:41.495 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+10:49:41.495 INFO  开始处理模块: one 
+10:49:41.495 DEBUG 处理模板: ./src/page/one.page 
+10:49:41.508 DEBUG 发现 keyframes 规则: fadeIn 
+10:49:41.508 DEBUG 发现 keyframes 规则: fadeIn2 
+10:49:41.508 DEBUG 发现 keyframes 规则: short 
+10:49:41.508 DEBUG 缓存模板: one./src/page/one.page 
+10:49:41.508 DEBUG 模板one处理用时: 13 毫秒! 
+10:49:41.508 INFO  开始处理模块: two 
+10:49:41.509 DEBUG 处理模板: ./src/page/two.page 
+10:49:41.516 DEBUG 缓存模板: two./src/page/two.page 
+10:49:41.516 DEBUG 模板two处理用时: 7 毫秒! 
+10:49:41.517 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+10:49:41.517 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+10:49:41.517 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:49:41.517 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+10:49:41.517 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+10:49:41.517 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+10:49:41.518 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+10:49:41.518 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+10:49:41.519 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:49:41.519 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:49:41.519 INFO  css中的资源处理完毕! 
+10:49:41.519 DEBUG 使用postcss处理样式，使用了2个插件! 
+10:49:41.521 INFO  正在处理script! 
+10:49:41.521 INFO  工程中包含多个页面! 
+10:49:41.522 DEBUG 页面中不包含切换动画! 
+10:49:41.628 INFO  js中的资源处理完毕! 
+10:49:41.630 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+10:49:41.630 DEBUG 外部脚本数量: 1 
+10:49:41.630 DEBUG 处理脚本: jquery1.11.0 
+10:49:41.630 DEBUG 网络脚本: jquery1.11.0 
+10:49:41.630 DEBUG 完成外部脚本引用处理! 
+10:49:41.630 DEBUG 输出scriptData 
+10:49:41.630 DEBUG 判断是否可以输出Html! 
+10:49:41.630 DEBUG 还有没有经过处理的资源! 
+10:49:41.746 INFO  使用postcss处理完毕! 用时: 227 毫秒 
+10:49:41.746 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+10:49:41.746 DEBUG 判断是否可以输出Html! 
+10:49:41.747 DEBUG 准备输出html! 
+10:49:41.747 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+10:49:41.747 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:49:41.747 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+10:49:41.747 DEBUG 开始美化html 
+10:49:41.751 INFO  发送重新页面需要刷新命令! 
+10:49:41.752 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+10:49:55.244 INFO  file change: D:\work\Children's Day\src\page\two.page 
+10:49:55.245 INFO  --------------------------- 开始编译 --------------------------- 
+10:49:55.245 INFO  程序运行目录: D:\work\Children's Day 
+10:49:55.245 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+10:49:55.245 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+10:49:55.245 DEBUG 读取网页标题: 页面 
+10:49:55.245 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+10:49:55.245 INFO  开始处理模块: one 
+10:49:55.245 DEBUG 处理模板: ./src/page/one.page 
+10:49:55.257 DEBUG 发现 keyframes 规则: fadeIn 
+10:49:55.257 DEBUG 发现 keyframes 规则: fadeIn2 
+10:49:55.257 DEBUG 发现 keyframes 规则: short 
+10:49:55.257 DEBUG 缓存模板: one./src/page/one.page 
+10:49:55.257 DEBUG 模板one处理用时: 12 毫秒! 
+10:49:55.257 INFO  开始处理模块: two 
+10:49:55.257 DEBUG 处理模板: ./src/page/two.page 
+10:49:55.261 DEBUG 缓存模板: two./src/page/two.page 
+10:49:55.261 DEBUG 模板two处理用时: 4 毫秒! 
+10:49:55.261 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+10:49:55.262 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+10:49:55.262 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:49:55.262 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+10:49:55.262 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+10:49:55.262 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+10:49:55.262 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+10:49:55.262 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+10:49:55.262 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:49:55.262 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:49:55.262 INFO  css中的资源处理完毕! 
+10:49:55.262 DEBUG 使用postcss处理样式，使用了2个插件! 
+10:49:55.265 INFO  正在处理script! 
+10:49:55.266 INFO  工程中包含多个页面! 
+10:49:55.268 DEBUG 页面中不包含切换动画! 
+10:49:55.346 INFO  js中的资源处理完毕! 
+10:49:55.346 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+10:49:55.346 DEBUG 外部脚本数量: 1 
+10:49:55.346 DEBUG 处理脚本: jquery1.11.0 
+10:49:55.346 DEBUG 网络脚本: jquery1.11.0 
+10:49:55.346 DEBUG 完成外部脚本引用处理! 
+10:49:55.346 DEBUG 输出scriptData 
+10:49:55.346 DEBUG 判断是否可以输出Html! 
+10:49:55.346 DEBUG 还有没有经过处理的资源! 
+10:49:55.462 INFO  使用postcss处理完毕! 用时: 200 毫秒 
+10:49:55.462 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+10:49:55.463 DEBUG 判断是否可以输出Html! 
+10:49:55.463 DEBUG 准备输出html! 
+10:49:55.463 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+10:49:55.463 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:49:55.463 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+10:49:55.463 DEBUG 开始美化html 
+10:49:55.468 INFO  发送重新页面需要刷新命令! 
+10:49:55.479 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+10:50:27.723 INFO  file change: D:\work\Children's Day\src\page\two.page 
+10:50:27.724 INFO  --------------------------- 开始编译 --------------------------- 
+10:50:27.724 INFO  程序运行目录: D:\work\Children's Day 
+10:50:27.724 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+10:50:27.724 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+10:50:27.724 DEBUG 读取网页标题: 页面 
+10:50:27.724 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+10:50:27.724 INFO  开始处理模块: one 
+10:50:27.724 DEBUG 处理模板: ./src/page/one.page 
+10:50:27.740 DEBUG 发现 keyframes 规则: fadeIn 
+10:50:27.740 DEBUG 发现 keyframes 规则: fadeIn2 
+10:50:27.740 DEBUG 发现 keyframes 规则: short 
+10:50:27.740 DEBUG 缓存模板: one./src/page/one.page 
+10:50:27.740 DEBUG 模板one处理用时: 16 毫秒! 
+10:50:27.740 INFO  开始处理模块: two 
+10:50:27.741 DEBUG 处理模板: ./src/page/two.page 
+10:50:27.746 DEBUG 缓存模板: two./src/page/two.page 
+10:50:27.746 DEBUG 模板two处理用时: 5 毫秒! 
+10:50:27.746 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+10:50:27.746 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+10:50:27.746 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:50:27.746 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+10:50:27.746 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+10:50:27.746 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+10:50:27.746 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+10:50:27.746 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+10:50:27.746 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:50:27.746 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:50:27.747 INFO  css中的资源处理完毕! 
+10:50:27.747 DEBUG 使用postcss处理样式，使用了2个插件! 
+10:50:27.749 INFO  正在处理script! 
+10:50:27.750 INFO  工程中包含多个页面! 
+10:50:27.750 DEBUG 页面中不包含切换动画! 
+10:50:27.841 INFO  js中的资源处理完毕! 
+10:50:27.842 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+10:50:27.842 DEBUG 外部脚本数量: 1 
+10:50:27.842 DEBUG 处理脚本: jquery1.11.0 
+10:50:27.842 DEBUG 网络脚本: jquery1.11.0 
+10:50:27.842 DEBUG 完成外部脚本引用处理! 
+10:50:27.842 DEBUG 输出scriptData 
+10:50:27.842 DEBUG 判断是否可以输出Html! 
+10:50:27.842 DEBUG 还有没有经过处理的资源! 
+10:50:27.956 INFO  使用postcss处理完毕! 用时: 209 毫秒 
+10:50:27.956 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+10:50:27.957 DEBUG 判断是否可以输出Html! 
+10:50:27.957 DEBUG 准备输出html! 
+10:50:27.957 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+10:50:27.957 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:50:27.957 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+10:50:27.957 DEBUG 开始美化html 
+10:50:27.963 INFO  发送重新页面需要刷新命令! 
+10:50:27.969 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+10:51:35.104 INFO  file change: D:\work\Children's Day\src\page\two.page 
+10:51:35.105 INFO  --------------------------- 开始编译 --------------------------- 
+10:51:35.105 INFO  程序运行目录: D:\work\Children's Day 
+10:51:35.105 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+10:51:35.105 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+10:51:35.105 DEBUG 读取网页标题: 页面 
+10:51:35.105 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+10:51:35.105 INFO  开始处理模块: one 
+10:51:35.105 DEBUG 处理模板: ./src/page/one.page 
+10:51:35.115 DEBUG 发现 keyframes 规则: fadeIn 
+10:51:35.115 DEBUG 发现 keyframes 规则: fadeIn2 
+10:51:35.115 DEBUG 发现 keyframes 规则: short 
+10:51:35.115 DEBUG 缓存模板: one./src/page/one.page 
+10:51:35.115 DEBUG 模板one处理用时: 10 毫秒! 
+10:51:35.115 INFO  开始处理模块: two 
+10:51:35.115 DEBUG 处理模板: ./src/page/two.page 
+10:51:35.121 DEBUG 缓存模板: two./src/page/two.page 
+10:51:35.121 DEBUG 模板two处理用时: 6 毫秒! 
+10:51:35.121 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+10:51:35.121 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+10:51:35.121 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:51:35.121 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+10:51:35.121 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+10:51:35.121 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+10:51:35.121 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+10:51:35.121 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+10:51:35.121 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:51:35.121 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:51:35.121 INFO  css中的资源处理完毕! 
+10:51:35.121 DEBUG 使用postcss处理样式，使用了2个插件! 
+10:51:35.125 INFO  正在处理script! 
+10:51:35.125 INFO  工程中包含多个页面! 
+10:51:35.126 DEBUG 页面中不包含切换动画! 
+10:51:35.198 INFO  js中的资源处理完毕! 
+10:51:35.198 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+10:51:35.198 DEBUG 外部脚本数量: 1 
+10:51:35.198 DEBUG 处理脚本: jquery1.11.0 
+10:51:35.198 DEBUG 网络脚本: jquery1.11.0 
+10:51:35.198 DEBUG 完成外部脚本引用处理! 
+10:51:35.198 DEBUG 输出scriptData 
+10:51:35.198 DEBUG 判断是否可以输出Html! 
+10:51:35.198 DEBUG 还有没有经过处理的资源! 
+10:51:35.361 INFO  使用postcss处理完毕! 用时: 240 毫秒 
+10:51:35.361 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+10:51:35.362 DEBUG 判断是否可以输出Html! 
+10:51:35.362 DEBUG 准备输出html! 
+10:51:35.362 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+10:51:35.362 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:51:35.362 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+10:51:35.362 DEBUG 开始美化html 
+10:51:35.366 INFO  发送重新页面需要刷新命令! 
+10:51:35.368 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+10:51:48.965 INFO  file change: D:\work\Children's Day\src\page\two.page 
+10:51:48.966 INFO  --------------------------- 开始编译 --------------------------- 
+10:51:48.966 INFO  程序运行目录: D:\work\Children's Day 
+10:51:48.966 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+10:51:48.966 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+10:51:48.966 DEBUG 读取网页标题: 页面 
+10:51:48.966 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+10:51:48.966 INFO  开始处理模块: one 
+10:51:48.966 DEBUG 处理模板: ./src/page/one.page 
+10:51:48.981 DEBUG 发现 keyframes 规则: fadeIn 
+10:51:48.981 DEBUG 发现 keyframes 规则: fadeIn2 
+10:51:48.981 DEBUG 发现 keyframes 规则: short 
+10:51:48.981 DEBUG 缓存模板: one./src/page/one.page 
+10:51:48.981 DEBUG 模板one处理用时: 15 毫秒! 
+10:51:48.981 INFO  开始处理模块: two 
+10:51:48.982 DEBUG 处理模板: ./src/page/two.page 
+10:51:48.987 DEBUG 缓存模板: two./src/page/two.page 
+10:51:48.987 DEBUG 模板two处理用时: 5 毫秒! 
+10:51:48.988 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+10:51:48.988 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+10:51:48.988 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:51:48.988 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+10:51:48.988 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+10:51:48.988 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+10:51:48.988 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+10:51:48.988 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+10:51:48.988 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:51:48.988 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:51:48.988 INFO  css中的资源处理完毕! 
+10:51:48.988 DEBUG 使用postcss处理样式，使用了2个插件! 
+10:51:48.990 INFO  正在处理script! 
+10:51:48.991 INFO  工程中包含多个页面! 
+10:51:48.991 DEBUG 页面中不包含切换动画! 
+10:51:49.091 INFO  js中的资源处理完毕! 
+10:51:49.092 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+10:51:49.092 DEBUG 外部脚本数量: 1 
+10:51:49.092 DEBUG 处理脚本: jquery1.11.0 
+10:51:49.092 DEBUG 网络脚本: jquery1.11.0 
+10:51:49.092 DEBUG 完成外部脚本引用处理! 
+10:51:49.092 DEBUG 输出scriptData 
+10:51:49.092 DEBUG 判断是否可以输出Html! 
+10:51:49.092 DEBUG 还有没有经过处理的资源! 
+10:51:49.207 INFO  使用postcss处理完毕! 用时: 219 毫秒 
+10:51:49.207 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+10:51:49.207 DEBUG 判断是否可以输出Html! 
+10:51:49.207 DEBUG 准备输出html! 
+10:51:49.207 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+10:51:49.207 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:51:49.207 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+10:51:49.207 DEBUG 开始美化html 
+10:51:49.210 INFO  发送重新页面需要刷新命令! 
+10:51:49.226 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+10:52:09.110 INFO  file change: D:\work\Children's Day\src\page\two.page 
+10:52:09.111 INFO  --------------------------- 开始编译 --------------------------- 
+10:52:09.111 INFO  程序运行目录: D:\work\Children's Day 
+10:52:09.111 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+10:52:09.111 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+10:52:09.111 DEBUG 读取网页标题: 页面 
+10:52:09.111 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+10:52:09.111 INFO  开始处理模块: one 
+10:52:09.111 DEBUG 处理模板: ./src/page/one.page 
+10:52:09.127 DEBUG 发现 keyframes 规则: fadeIn 
+10:52:09.127 DEBUG 发现 keyframes 规则: fadeIn2 
+10:52:09.127 DEBUG 发现 keyframes 规则: short 
+10:52:09.127 DEBUG 缓存模板: one./src/page/one.page 
+10:52:09.127 DEBUG 模板one处理用时: 16 毫秒! 
+10:52:09.128 INFO  开始处理模块: two 
+10:52:09.128 DEBUG 处理模板: ./src/page/two.page 
+10:52:09.134 DEBUG 缓存模板: two./src/page/two.page 
+10:52:09.134 DEBUG 模板two处理用时: 6 毫秒! 
+10:52:09.135 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+10:52:09.135 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+10:52:09.135 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:52:09.135 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+10:52:09.135 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+10:52:09.135 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+10:52:09.135 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+10:52:09.135 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+10:52:09.135 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:52:09.135 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:52:09.135 INFO  css中的资源处理完毕! 
+10:52:09.135 DEBUG 使用postcss处理样式，使用了2个插件! 
+10:52:09.140 INFO  正在处理script! 
+10:52:09.141 INFO  工程中包含多个页面! 
+10:52:09.141 DEBUG 页面中不包含切换动画! 
+10:52:09.258 INFO  js中的资源处理完毕! 
+10:52:09.259 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+10:52:09.259 DEBUG 外部脚本数量: 1 
+10:52:09.259 DEBUG 处理脚本: jquery1.11.0 
+10:52:09.259 DEBUG 网络脚本: jquery1.11.0 
+10:52:09.259 DEBUG 完成外部脚本引用处理! 
+10:52:09.259 DEBUG 输出scriptData 
+10:52:09.259 DEBUG 判断是否可以输出Html! 
+10:52:09.259 DEBUG 还有没有经过处理的资源! 
+10:52:09.384 INFO  使用postcss处理完毕! 用时: 249 毫秒 
+10:52:09.384 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+10:52:09.384 DEBUG 判断是否可以输出Html! 
+10:52:09.384 DEBUG 准备输出html! 
+10:52:09.384 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+10:52:09.384 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:52:09.384 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+10:52:09.384 DEBUG 开始美化html 
+10:52:09.404 INFO  发送重新页面需要刷新命令! 
+10:52:09.428 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+10:53:20.160 INFO  file change: D:\work\Children's Day\src\page\two.page 
+10:53:20.161 INFO  --------------------------- 开始编译 --------------------------- 
+10:53:20.161 INFO  程序运行目录: D:\work\Children's Day 
+10:53:20.161 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+10:53:20.161 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+10:53:20.161 DEBUG 读取网页标题: 页面 
+10:53:20.161 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+10:53:20.161 INFO  开始处理模块: one 
+10:53:20.161 DEBUG 处理模板: ./src/page/one.page 
+10:53:20.175 DEBUG 发现 keyframes 规则: fadeIn 
+10:53:20.175 DEBUG 发现 keyframes 规则: fadeIn2 
+10:53:20.175 DEBUG 发现 keyframes 规则: short 
+10:53:20.175 DEBUG 缓存模板: one./src/page/one.page 
+10:53:20.175 DEBUG 模板one处理用时: 14 毫秒! 
+10:53:20.175 INFO  开始处理模块: two 
+10:53:20.175 DEBUG 处理模板: ./src/page/two.page 
+10:53:20.181 DEBUG 缓存模板: two./src/page/two.page 
+10:53:20.181 DEBUG 模板two处理用时: 6 毫秒! 
+10:53:20.181 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+10:53:20.181 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+10:53:20.181 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:53:20.181 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+10:53:20.181 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+10:53:20.181 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+10:53:20.181 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+10:53:20.181 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+10:53:20.181 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:53:20.181 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:53:20.181 INFO  css中的资源处理完毕! 
+10:53:20.181 DEBUG 使用postcss处理样式，使用了2个插件! 
+10:53:20.183 INFO  正在处理script! 
+10:53:20.184 INFO  工程中包含多个页面! 
+10:53:20.185 DEBUG 页面中不包含切换动画! 
+10:53:20.286 INFO  js中的资源处理完毕! 
+10:53:20.287 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+10:53:20.287 DEBUG 外部脚本数量: 1 
+10:53:20.287 DEBUG 处理脚本: jquery1.11.0 
+10:53:20.287 DEBUG 网络脚本: jquery1.11.0 
+10:53:20.287 DEBUG 完成外部脚本引用处理! 
+10:53:20.287 DEBUG 输出scriptData 
+10:53:20.287 DEBUG 判断是否可以输出Html! 
+10:53:20.287 DEBUG 还有没有经过处理的资源! 
+10:53:20.414 INFO  使用postcss处理完毕! 用时: 233 毫秒 
+10:53:20.414 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+10:53:20.415 DEBUG 判断是否可以输出Html! 
+10:53:20.415 DEBUG 准备输出html! 
+10:53:20.415 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+10:53:20.415 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:53:20.415 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+10:53:20.415 DEBUG 开始美化html 
+10:53:20.419 INFO  发送重新页面需要刷新命令! 
+10:53:20.421 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+10:53:44.329 INFO  file change: D:\work\Children's Day\src\page\two.page 
+10:53:44.329 INFO  --------------------------- 开始编译 --------------------------- 
+10:53:44.329 INFO  程序运行目录: D:\work\Children's Day 
+10:53:44.329 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+10:53:44.329 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+10:53:44.329 DEBUG 读取网页标题: 页面 
+10:53:44.329 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+10:53:44.329 INFO  开始处理模块: one 
+10:53:44.329 DEBUG 处理模板: ./src/page/one.page 
+10:53:44.341 DEBUG 发现 keyframes 规则: fadeIn 
+10:53:44.341 DEBUG 发现 keyframes 规则: fadeIn2 
+10:53:44.341 DEBUG 发现 keyframes 规则: short 
+10:53:44.341 DEBUG 缓存模板: one./src/page/one.page 
+10:53:44.341 DEBUG 模板one处理用时: 12 毫秒! 
+10:53:44.341 INFO  开始处理模块: two 
+10:53:44.341 DEBUG 处理模板: ./src/page/two.page 
+10:53:44.345 DEBUG 缓存模板: two./src/page/two.page 
+10:53:44.345 DEBUG 模板two处理用时: 4 毫秒! 
+10:53:44.345 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+10:53:44.345 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+10:53:44.345 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:53:44.345 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+10:53:44.345 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+10:53:44.345 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+10:53:44.345 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+10:53:44.345 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+10:53:44.345 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:53:44.345 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:53:44.345 INFO  css中的资源处理完毕! 
+10:53:44.345 DEBUG 使用postcss处理样式，使用了2个插件! 
+10:53:44.349 INFO  正在处理script! 
+10:53:44.350 INFO  工程中包含多个页面! 
+10:53:44.350 DEBUG 页面中不包含切换动画! 
+10:53:44.421 INFO  js中的资源处理完毕! 
+10:53:44.422 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+10:53:44.422 DEBUG 外部脚本数量: 1 
+10:53:44.422 DEBUG 处理脚本: jquery1.11.0 
+10:53:44.422 DEBUG 网络脚本: jquery1.11.0 
+10:53:44.422 DEBUG 完成外部脚本引用处理! 
+10:53:44.422 DEBUG 输出scriptData 
+10:53:44.422 DEBUG 判断是否可以输出Html! 
+10:53:44.422 DEBUG 还有没有经过处理的资源! 
+10:53:44.535 INFO  使用postcss处理完毕! 用时: 190 毫秒 
+10:53:44.535 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+10:53:44.535 DEBUG 判断是否可以输出Html! 
+10:53:44.535 DEBUG 准备输出html! 
+10:53:44.535 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+10:53:44.535 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:53:44.535 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+10:53:44.535 DEBUG 开始美化html 
+10:53:44.550 INFO  发送重新页面需要刷新命令! 
+10:53:44.552 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+10:56:13.736 INFO  file change: D:\work\Children's Day\src\page\two.page 
+10:56:13.737 INFO  --------------------------- 开始编译 --------------------------- 
+10:56:13.737 INFO  程序运行目录: D:\work\Children's Day 
+10:56:13.737 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+10:56:13.737 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+10:56:13.737 DEBUG 读取网页标题: 页面 
+10:56:13.737 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+10:56:13.737 INFO  开始处理模块: one 
+10:56:13.737 DEBUG 处理模板: ./src/page/one.page 
+10:56:13.750 DEBUG 发现 keyframes 规则: fadeIn 
+10:56:13.750 DEBUG 发现 keyframes 规则: fadeIn2 
+10:56:13.750 DEBUG 发现 keyframes 规则: short 
+10:56:13.751 DEBUG 缓存模板: one./src/page/one.page 
+10:56:13.751 DEBUG 模板one处理用时: 14 毫秒! 
+10:56:13.751 INFO  开始处理模块: two 
+10:56:13.751 DEBUG 处理模板: ./src/page/two.page 
+10:56:13.755 DEBUG 缓存模板: two./src/page/two.page 
+10:56:13.755 DEBUG 模板two处理用时: 4 毫秒! 
+10:56:13.756 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+10:56:13.756 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+10:56:13.756 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:56:13.756 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+10:56:13.756 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+10:56:13.756 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+10:56:13.756 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+10:56:13.756 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+10:56:13.756 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:56:13.757 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:56:13.757 INFO  css中的资源处理完毕! 
+10:56:13.757 DEBUG 使用postcss处理样式，使用了2个插件! 
+10:56:13.758 INFO  正在处理script! 
+10:56:13.759 INFO  工程中包含多个页面! 
+10:56:13.759 DEBUG 页面中不包含切换动画! 
+10:56:13.855 INFO  js中的资源处理完毕! 
+10:56:13.856 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+10:56:13.856 DEBUG 外部脚本数量: 1 
+10:56:13.856 DEBUG 处理脚本: jquery1.11.0 
+10:56:13.856 DEBUG 网络脚本: jquery1.11.0 
+10:56:13.856 DEBUG 完成外部脚本引用处理! 
+10:56:13.856 DEBUG 输出scriptData 
+10:56:13.856 DEBUG 判断是否可以输出Html! 
+10:56:13.856 DEBUG 还有没有经过处理的资源! 
+10:56:13.981 INFO  使用postcss处理完毕! 用时: 224 毫秒 
+10:56:13.981 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+10:56:13.982 DEBUG 判断是否可以输出Html! 
+10:56:13.982 DEBUG 准备输出html! 
+10:56:13.982 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+10:56:13.982 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:56:13.982 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+10:56:13.982 DEBUG 处理资源: D:\work\Children's Day\src\resource\de.png 
+10:56:13.982 DEBUG 开始美化html 
+10:56:13.989 INFO  发送重新页面需要刷新命令! 
+10:56:13.996 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+10:56:14.087 DEBUG 文件处理成功: 
+10:56:14.087 DEBUG D:\work\Children's Day\dist\static\resource\de.png 
+10:57:22.136 INFO  file change: D:\work\Children's Day\src\page\two.page 
+10:57:22.137 INFO  --------------------------- 开始编译 --------------------------- 
+10:57:22.137 INFO  程序运行目录: D:\work\Children's Day 
+10:57:22.137 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+10:57:22.137 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+10:57:22.137 DEBUG 读取网页标题: 页面 
+10:57:22.137 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+10:57:22.137 INFO  开始处理模块: one 
+10:57:22.137 DEBUG 处理模板: ./src/page/one.page 
+10:57:22.147 DEBUG 发现 keyframes 规则: fadeIn 
+10:57:22.147 DEBUG 发现 keyframes 规则: fadeIn2 
+10:57:22.147 DEBUG 发现 keyframes 规则: short 
+10:57:22.147 DEBUG 缓存模板: one./src/page/one.page 
+10:57:22.147 DEBUG 模板one处理用时: 10 毫秒! 
+10:57:22.147 INFO  开始处理模块: two 
+10:57:22.147 DEBUG 处理模板: ./src/page/two.page 
+10:57:22.152 DEBUG 缓存模板: two./src/page/two.page 
+10:57:22.152 DEBUG 模板two处理用时: 5 毫秒! 
+10:57:22.152 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+10:57:22.152 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+10:57:22.152 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:57:22.152 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+10:57:22.152 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+10:57:22.152 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+10:57:22.152 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+10:57:22.153 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+10:57:22.153 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:57:22.153 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+10:57:22.153 INFO  css中的资源处理完毕! 
+10:57:22.153 DEBUG 使用postcss处理样式，使用了2个插件! 
+10:57:22.156 INFO  正在处理script! 
+10:57:22.157 INFO  工程中包含多个页面! 
+10:57:22.157 DEBUG 页面中不包含切换动画! 
+10:57:22.237 INFO  js中的资源处理完毕! 
+10:57:22.237 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+10:57:22.237 DEBUG 外部脚本数量: 1 
+10:57:22.237 DEBUG 处理脚本: jquery1.11.0 
+10:57:22.237 DEBUG 网络脚本: jquery1.11.0 
+10:57:22.237 DEBUG 完成外部脚本引用处理! 
+10:57:22.237 DEBUG 输出scriptData 
+10:57:22.237 DEBUG 判断是否可以输出Html! 
+10:57:22.237 DEBUG 还有没有经过处理的资源! 
+10:57:22.362 INFO  使用postcss处理完毕! 用时: 209 毫秒 
+10:57:22.362 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+10:57:22.362 DEBUG 判断是否可以输出Html! 
+10:57:22.362 DEBUG 准备输出html! 
+10:57:22.362 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+10:57:22.362 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+10:57:22.362 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+10:57:22.362 DEBUG 忽略文件: D:\work\Children's Day\src\resource\de.png 
+10:57:22.362 DEBUG 开始美化html 
+10:57:22.365 INFO  发送重新页面需要刷新命令! 
+10:57:22.370 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+11:05:00.422 INFO  file change: D:\work\Children's Day\src\page\two.page 
+11:05:00.423 INFO  --------------------------- 开始编译 --------------------------- 
+11:05:00.423 INFO  程序运行目录: D:\work\Children's Day 
+11:05:00.423 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+11:05:00.423 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+11:05:00.423 DEBUG 读取网页标题: 页面 
+11:05:00.423 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+11:05:00.423 INFO  开始处理模块: one 
+11:05:00.423 DEBUG 处理模板: ./src/page/one.page 
+11:05:00.436 DEBUG 发现 keyframes 规则: fadeIn 
+11:05:00.436 DEBUG 发现 keyframes 规则: fadeIn2 
+11:05:00.436 DEBUG 发现 keyframes 规则: short 
+11:05:00.436 DEBUG 缓存模板: one./src/page/one.page 
+11:05:00.436 DEBUG 模板one处理用时: 13 毫秒! 
+11:05:00.436 INFO  开始处理模块: two 
+11:05:00.436 DEBUG 处理模板: ./src/page/two.page 
+11:05:00.443 DEBUG 缓存模板: two./src/page/two.page 
+11:05:00.443 DEBUG 模板two处理用时: 7 毫秒! 
+11:05:00.443 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+11:05:00.443 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+11:05:00.443 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+11:05:00.443 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+11:05:00.443 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+11:05:00.443 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+11:05:00.443 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+11:05:00.443 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+11:05:00.443 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+11:05:00.443 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+11:05:00.443 DEBUG 处理资源: D:\work\Children's Day\src\resource\content.png 
+11:05:00.444 INFO  css中的资源处理完毕! 
+11:05:00.444 DEBUG 使用postcss处理样式，使用了2个插件! 
+11:05:00.447 INFO  正在处理script! 
+11:05:00.447 INFO  工程中包含多个页面! 
+11:05:00.448 DEBUG 页面中不包含切换动画! 
+11:05:00.547 INFO  js中的资源处理完毕! 
+11:05:00.548 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+11:05:00.548 DEBUG 外部脚本数量: 1 
+11:05:00.548 DEBUG 处理脚本: jquery1.11.0 
+11:05:00.548 DEBUG 网络脚本: jquery1.11.0 
+11:05:00.548 DEBUG 完成外部脚本引用处理! 
+11:05:00.548 DEBUG 输出scriptData 
+11:05:00.548 DEBUG 判断是否可以输出Html! 
+11:05:00.548 DEBUG 还有没有经过处理的资源! 
+11:05:00.667 INFO  使用postcss处理完毕! 用时: 223 毫秒 
+11:05:00.667 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+11:05:00.667 DEBUG 判断是否可以输出Html! 
+11:05:00.667 DEBUG 准备输出html! 
+11:05:00.667 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+11:05:00.667 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+11:05:00.667 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+11:05:00.667 DEBUG 忽略文件: D:\work\Children's Day\src\resource\de.png 
+11:05:00.667 DEBUG 开始美化html 
+11:05:00.670 INFO  发送重新页面需要刷新命令! 
+11:05:00.673 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+11:05:00.870 DEBUG 文件处理成功: 
+11:05:00.870 DEBUG D:\work\Children's Day\dist\static\resource\content.png 
+11:05:45.773 INFO  file change: D:\work\Children's Day\src\page\two.page 
+11:05:45.774 INFO  --------------------------- 开始编译 --------------------------- 
+11:05:45.774 INFO  程序运行目录: D:\work\Children's Day 
+11:05:45.774 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+11:05:45.774 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+11:05:45.774 DEBUG 读取网页标题: 页面 
+11:05:45.774 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+11:05:45.774 INFO  开始处理模块: one 
+11:05:45.774 DEBUG 处理模板: ./src/page/one.page 
+11:05:45.786 DEBUG 发现 keyframes 规则: fadeIn 
+11:05:45.786 DEBUG 发现 keyframes 规则: fadeIn2 
+11:05:45.786 DEBUG 发现 keyframes 规则: short 
+11:05:45.786 DEBUG 缓存模板: one./src/page/one.page 
+11:05:45.786 DEBUG 模板one处理用时: 12 毫秒! 
+11:05:45.786 INFO  开始处理模块: two 
+11:05:45.786 DEBUG 处理模板: ./src/page/two.page 
+11:05:45.794 DEBUG 缓存模板: two./src/page/two.page 
+11:05:45.794 DEBUG 模板two处理用时: 8 毫秒! 
+11:05:45.795 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+11:05:45.795 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+11:05:45.795 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+11:05:45.795 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+11:05:45.795 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+11:05:45.795 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+11:05:45.795 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+11:05:45.795 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+11:05:45.795 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+11:05:45.795 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+11:05:45.795 DEBUG 忽略文件: D:\work\Children's Day\src\resource\content.png 
+11:05:45.795 INFO  css中的资源处理完毕! 
+11:05:45.795 DEBUG 使用postcss处理样式，使用了2个插件! 
+11:05:45.799 INFO  正在处理script! 
+11:05:45.800 INFO  工程中包含多个页面! 
+11:05:45.800 DEBUG 页面中不包含切换动画! 
+11:05:45.873 INFO  js中的资源处理完毕! 
+11:05:45.873 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+11:05:45.873 DEBUG 外部脚本数量: 1 
+11:05:45.873 DEBUG 处理脚本: jquery1.11.0 
+11:05:45.873 DEBUG 网络脚本: jquery1.11.0 
+11:05:45.873 DEBUG 完成外部脚本引用处理! 
+11:05:45.873 DEBUG 输出scriptData 
+11:05:45.873 DEBUG 判断是否可以输出Html! 
+11:05:45.873 DEBUG 还有没有经过处理的资源! 
+11:05:46.038 INFO  使用postcss处理完毕! 用时: 243 毫秒 
+11:05:46.038 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+11:05:46.038 DEBUG 判断是否可以输出Html! 
+11:05:46.038 DEBUG 准备输出html! 
+11:05:46.038 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+11:05:46.038 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+11:05:46.038 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+11:05:46.038 DEBUG 忽略文件: D:\work\Children's Day\src\resource\de.png 
+11:05:46.038 DEBUG 开始美化html 
+11:05:46.043 INFO  发送重新页面需要刷新命令! 
+11:05:46.044 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+11:08:44.843 INFO  file change: D:\work\Children's Day\src\page\two.page 
+11:08:44.844 INFO  --------------------------- 开始编译 --------------------------- 
+11:08:44.844 INFO  程序运行目录: D:\work\Children's Day 
+11:08:44.844 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+11:08:44.844 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+11:08:44.844 DEBUG 读取网页标题: 页面 
+11:08:44.844 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+11:08:44.844 INFO  开始处理模块: one 
+11:08:44.844 DEBUG 处理模板: ./src/page/one.page 
+11:08:44.860 DEBUG 发现 keyframes 规则: fadeIn 
+11:08:44.860 DEBUG 发现 keyframes 规则: fadeIn2 
+11:08:44.860 DEBUG 发现 keyframes 规则: short 
+11:08:44.860 DEBUG 缓存模板: one./src/page/one.page 
+11:08:44.860 DEBUG 模板one处理用时: 16 毫秒! 
+11:08:44.860 INFO  开始处理模块: two 
+11:08:44.860 DEBUG 处理模板: ./src/page/two.page 
+11:08:44.866 DEBUG 缓存模板: two./src/page/two.page 
+11:08:44.866 DEBUG 模板two处理用时: 6 毫秒! 
+11:08:44.866 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+11:08:44.866 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+11:08:44.866 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+11:08:44.866 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+11:08:44.866 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+11:08:44.866 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+11:08:44.866 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+11:08:44.866 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+11:08:44.866 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+11:08:44.866 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+11:08:44.866 DEBUG 忽略文件: D:\work\Children's Day\src\resource\content.png 
+11:08:44.866 INFO  css中的资源处理完毕! 
+11:08:44.866 DEBUG 使用postcss处理样式，使用了2个插件! 
+11:08:44.871 INFO  正在处理script! 
+11:08:44.871 INFO  工程中包含多个页面! 
+11:08:44.872 DEBUG 页面中不包含切换动画! 
+11:08:44.989 INFO  js中的资源处理完毕! 
+11:08:44.990 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+11:08:44.990 DEBUG 外部脚本数量: 1 
+11:08:44.990 DEBUG 处理脚本: jquery1.11.0 
+11:08:44.990 DEBUG 网络脚本: jquery1.11.0 
+11:08:44.990 DEBUG 完成外部脚本引用处理! 
+11:08:44.990 DEBUG 输出scriptData 
+11:08:44.990 DEBUG 判断是否可以输出Html! 
+11:08:44.990 DEBUG 还有没有经过处理的资源! 
+11:08:45.111 INFO  使用postcss处理完毕! 用时: 245 毫秒 
+11:08:45.111 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+11:08:45.111 DEBUG 判断是否可以输出Html! 
+11:08:45.111 DEBUG 准备输出html! 
+11:08:45.111 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+11:08:45.111 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+11:08:45.111 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+11:08:45.111 DEBUG 忽略文件: D:\work\Children's Day\src\resource\de.png 
+11:08:45.111 DEBUG 开始美化html 
+11:08:45.117 INFO  发送重新页面需要刷新命令! 
+11:08:45.139 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+12:54:56.399 INFO  file change: D:\work\Children's Day\src\page\two.page 
+12:54:56.404 INFO  --------------------------- 开始编译 --------------------------- 
+12:54:56.404 INFO  程序运行目录: D:\work\Children's Day 
+12:54:56.404 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+12:54:56.404 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+12:54:56.406 DEBUG 读取网页标题: 页面 
+12:54:56.407 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+12:54:56.407 INFO  开始处理模块: one 
+12:54:56.408 DEBUG 处理模板: ./src/page/one.page 
+12:54:56.454 DEBUG 发现 keyframes 规则: fadeIn 
+12:54:56.454 DEBUG 发现 keyframes 规则: fadeIn2 
+12:54:56.454 DEBUG 发现 keyframes 规则: short 
+12:54:56.454 DEBUG 缓存模板: one./src/page/one.page 
+12:54:56.454 DEBUG 模板one处理用时: 46 毫秒! 
+12:54:56.454 INFO  开始处理模块: two 
+12:54:56.454 DEBUG 处理模板: ./src/page/two.page 
+12:54:56.465 DEBUG 缓存模板: two./src/page/two.page 
+12:54:56.465 DEBUG 模板two处理用时: 11 毫秒! 
+12:54:56.465 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+12:54:56.465 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+12:54:56.465 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+12:54:56.465 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+12:54:56.465 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+12:54:56.465 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+12:54:56.465 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+12:54:56.467 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+12:54:56.467 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+12:54:56.467 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+12:54:56.467 DEBUG 忽略文件: D:\work\Children's Day\src\resource\content.png 
+12:54:56.467 INFO  css中的资源处理完毕! 
+12:54:56.467 DEBUG 使用postcss处理样式，使用了2个插件! 
+12:54:56.470 INFO  正在处理script! 
+12:54:56.471 INFO  工程中包含多个页面! 
+12:54:56.471 DEBUG 页面中不包含切换动画! 
+12:54:56.601 INFO  js中的资源处理完毕! 
+12:54:56.602 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+12:54:56.602 DEBUG 外部脚本数量: 1 
+12:54:56.602 DEBUG 处理脚本: jquery1.11.0 
+12:54:56.602 DEBUG 网络脚本: jquery1.11.0 
+12:54:56.602 DEBUG 完成外部脚本引用处理! 
+12:54:56.602 DEBUG 输出scriptData 
+12:54:56.602 DEBUG 判断是否可以输出Html! 
+12:54:56.602 DEBUG 还有没有经过处理的资源! 
+12:54:56.730 INFO  使用postcss处理完毕! 用时: 263 毫秒 
+12:54:56.730 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+12:54:56.730 DEBUG 判断是否可以输出Html! 
+12:54:56.730 DEBUG 准备输出html! 
+12:54:56.730 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+12:54:56.730 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+12:54:56.730 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+12:54:56.730 DEBUG 忽略文件: D:\work\Children's Day\src\resource\de.png 
+12:54:56.730 DEBUG 开始美化html 
+12:54:56.736 INFO  发送重新页面需要刷新命令! 
+12:54:56.747 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+13:02:15.571 INFO  file change: D:\work\Children's Day\src\page\two.page 
+13:02:15.571 INFO  --------------------------- 开始编译 --------------------------- 
+13:02:15.571 INFO  程序运行目录: D:\work\Children's Day 
+13:02:15.571 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+13:02:15.572 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+13:02:15.572 DEBUG 读取网页标题: 页面 
+13:02:15.572 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+13:02:15.572 INFO  开始处理模块: one 
+13:02:15.572 DEBUG 处理模板: ./src/page/one.page 
+13:02:15.585 DEBUG 发现 keyframes 规则: fadeIn 
+13:02:15.585 DEBUG 发现 keyframes 规则: fadeIn2 
+13:02:15.585 DEBUG 发现 keyframes 规则: short 
+13:02:15.585 DEBUG 缓存模板: one./src/page/one.page 
+13:02:15.585 DEBUG 模板one处理用时: 13 毫秒! 
+13:02:15.585 INFO  开始处理模块: two 
+13:02:15.586 DEBUG 处理模板: ./src/page/two.page 
+13:02:15.591 DEBUG 缓存模板: two./src/page/two.page 
+13:02:15.591 DEBUG 模板two处理用时: 5 毫秒! 
+13:02:15.591 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+13:02:15.591 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+13:02:15.591 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+13:02:15.591 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+13:02:15.593 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+13:02:15.593 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+13:02:15.593 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+13:02:15.593 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+13:02:15.593 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+13:02:15.593 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+13:02:15.593 DEBUG 忽略文件: D:\work\Children's Day\src\resource\content.png 
+13:02:15.593 DEBUG 处理资源: D:\work\Children's Day\src\resource\text-2.png 
+13:02:15.593 INFO  css中的资源处理完毕! 
+13:02:15.593 DEBUG 使用postcss处理样式，使用了2个插件! 
+13:02:15.598 INFO  正在处理script! 
+13:02:15.598 INFO  工程中包含多个页面! 
+13:02:15.599 DEBUG 页面中不包含切换动画! 
+13:02:15.714 INFO  js中的资源处理完毕! 
+13:02:15.714 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+13:02:15.714 DEBUG 外部脚本数量: 1 
+13:02:15.714 DEBUG 处理脚本: jquery1.11.0 
+13:02:15.714 DEBUG 网络脚本: jquery1.11.0 
+13:02:15.714 DEBUG 完成外部脚本引用处理! 
+13:02:15.714 DEBUG 输出scriptData 
+13:02:15.714 DEBUG 判断是否可以输出Html! 
+13:02:15.714 DEBUG 还有没有经过处理的资源! 
+13:02:15.834 INFO  使用postcss处理完毕! 用时: 241 毫秒 
+13:02:15.834 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+13:02:15.834 DEBUG 判断是否可以输出Html! 
+13:02:15.834 DEBUG 准备输出html! 
+13:02:15.834 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+13:02:15.834 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+13:02:15.834 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+13:02:15.834 DEBUG 忽略文件: D:\work\Children's Day\src\resource\de.png 
+13:02:15.834 DEBUG 开始美化html 
+13:02:15.840 INFO  发送重新页面需要刷新命令! 
+13:02:15.842 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+13:02:15.992 DEBUG 文件处理成功: 
+13:02:15.992 DEBUG D:\work\Children's Day\dist\static\resource\text-2.png 
+13:05:49.230 INFO  file change: D:\work\Children's Day\src\page\two.page 
+13:05:49.231 INFO  --------------------------- 开始编译 --------------------------- 
+13:05:49.231 INFO  程序运行目录: D:\work\Children's Day 
+13:05:49.231 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+13:05:49.231 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+13:05:49.231 DEBUG 读取网页标题: 页面 
+13:05:49.231 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+13:05:49.231 INFO  开始处理模块: one 
+13:05:49.231 DEBUG 处理模板: ./src/page/one.page 
+13:05:49.244 DEBUG 发现 keyframes 规则: fadeIn 
+13:05:49.244 DEBUG 发现 keyframes 规则: fadeIn2 
+13:05:49.244 DEBUG 发现 keyframes 规则: short 
+13:05:49.245 DEBUG 缓存模板: one./src/page/one.page 
+13:05:49.245 DEBUG 模板one处理用时: 14 毫秒! 
+13:05:49.245 INFO  开始处理模块: two 
+13:05:49.245 DEBUG 处理模板: ./src/page/two.page 
+13:05:49.251 DEBUG 缓存模板: two./src/page/two.page 
+13:05:49.251 DEBUG 模板two处理用时: 6 毫秒! 
+13:05:49.251 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+13:05:49.251 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+13:05:49.251 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+13:05:49.251 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+13:05:49.251 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+13:05:49.251 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+13:05:49.251 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+13:05:49.251 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+13:05:49.252 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+13:05:49.252 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+13:05:49.252 DEBUG 忽略文件: D:\work\Children's Day\src\resource\content.png 
+13:05:49.252 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text-2.png 
+13:05:49.252 INFO  css中的资源处理完毕! 
+13:05:49.252 DEBUG 使用postcss处理样式，使用了2个插件! 
+13:05:49.254 INFO  正在处理script! 
+13:05:49.254 INFO  工程中包含多个页面! 
+13:05:49.255 DEBUG 页面中不包含切换动画! 
+13:05:49.330 INFO  js中的资源处理完毕! 
+13:05:49.331 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+13:05:49.331 DEBUG 外部脚本数量: 1 
+13:05:49.331 DEBUG 处理脚本: jquery1.11.0 
+13:05:49.331 DEBUG 网络脚本: jquery1.11.0 
+13:05:49.331 DEBUG 完成外部脚本引用处理! 
+13:05:49.331 DEBUG 输出scriptData 
+13:05:49.331 DEBUG 判断是否可以输出Html! 
+13:05:49.331 DEBUG 还有没有经过处理的资源! 
+13:05:49.532 INFO  使用postcss处理完毕! 用时: 280 毫秒 
+13:05:49.532 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+13:05:49.532 DEBUG 判断是否可以输出Html! 
+13:05:49.532 DEBUG 准备输出html! 
+13:05:49.532 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+13:05:49.532 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+13:05:49.532 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+13:05:49.532 DEBUG 忽略文件: D:\work\Children's Day\src\resource\de.png 
+13:05:49.532 DEBUG 开始美化html 
+13:05:49.538 INFO  发送重新页面需要刷新命令! 
+13:05:49.541 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+13:07:46.643 INFO  file change: D:\work\Children's Day\src\page\one.page 
+13:07:46.644 INFO  --------------------------- 开始编译 --------------------------- 
+13:07:46.644 INFO  程序运行目录: D:\work\Children's Day 
+13:07:46.644 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\one.page 
+13:07:46.644 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+13:07:46.644 DEBUG 读取网页标题: 页面 
+13:07:46.644 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+13:07:46.644 INFO  开始处理模块: one 
+13:07:46.644 DEBUG 处理模板: ./src/page/one.page 
+13:07:46.661 DEBUG 发现 keyframes 规则: fadeIn 
+13:07:46.661 DEBUG 发现 keyframes 规则: fadeIn2 
+13:07:46.661 DEBUG 发现 keyframes 规则: short 
+13:07:46.661 DEBUG 缓存模板: one./src/page/one.page 
+13:07:46.661 DEBUG 模板one处理用时: 17 毫秒! 
+13:07:46.661 INFO  开始处理模块: two 
+13:07:46.661 DEBUG 处理模板: ./src/page/two.page 
+13:07:46.670 DEBUG 缓存模板: two./src/page/two.page 
+13:07:46.670 DEBUG 模板two处理用时: 9 毫秒! 
+13:07:46.670 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+13:07:46.670 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+13:07:46.670 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+13:07:46.670 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+13:07:46.670 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+13:07:46.670 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+13:07:46.670 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+13:07:46.670 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+13:07:46.670 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+13:07:46.670 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+13:07:46.670 DEBUG 忽略文件: D:\work\Children's Day\src\resource\content.png 
+13:07:46.670 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text-2.png 
+13:07:46.670 INFO  css中的资源处理完毕! 
+13:07:46.670 DEBUG 使用postcss处理样式，使用了2个插件! 
+13:07:46.675 INFO  正在处理script! 
+13:07:46.676 INFO  工程中包含多个页面! 
+13:07:46.676 DEBUG 页面中不包含切换动画! 
+13:07:46.798 INFO  js中的资源处理完毕! 
+13:07:46.799 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+13:07:46.799 DEBUG 外部脚本数量: 1 
+13:07:46.799 DEBUG 处理脚本: jquery1.11.0 
+13:07:46.799 DEBUG 网络脚本: jquery1.11.0 
+13:07:46.799 DEBUG 完成外部脚本引用处理! 
+13:07:46.799 DEBUG 输出scriptData 
+13:07:46.799 DEBUG 判断是否可以输出Html! 
+13:07:46.799 DEBUG 还有没有经过处理的资源! 
+13:07:46.922 INFO  使用postcss处理完毕! 用时: 252 毫秒 
+13:07:46.922 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+13:07:46.922 DEBUG 判断是否可以输出Html! 
+13:07:46.922 DEBUG 准备输出html! 
+13:07:46.922 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+13:07:46.922 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+13:07:46.922 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+13:07:46.922 DEBUG 忽略文件: D:\work\Children's Day\src\resource\de.png 
+13:07:46.922 DEBUG 开始美化html 
+13:07:46.928 INFO  发送重新页面需要刷新命令! 
+13:07:46.952 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+13:08:27.567 INFO  file change: D:\work\Children's Day\src\page\two.page 
+13:08:27.568 INFO  --------------------------- 开始编译 --------------------------- 
+13:08:27.568 INFO  程序运行目录: D:\work\Children's Day 
+13:08:27.568 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+13:08:27.568 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+13:08:27.569 DEBUG 读取网页标题: 页面 
+13:08:27.569 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+13:08:27.569 INFO  开始处理模块: one 
+13:08:27.569 DEBUG 处理模板: ./src/page/one.page 
+13:08:27.583 DEBUG 发现 keyframes 规则: fadeIn 
+13:08:27.583 DEBUG 发现 keyframes 规则: fadeIn2 
+13:08:27.583 DEBUG 发现 keyframes 规则: short 
+13:08:27.583 DEBUG 缓存模板: one./src/page/one.page 
+13:08:27.583 DEBUG 模板one处理用时: 14 毫秒! 
+13:08:27.583 INFO  开始处理模块: two 
+13:08:27.583 DEBUG 处理模板: ./src/page/two.page 
+13:08:27.596 DEBUG 缓存模板: two./src/page/two.page 
+13:08:27.596 DEBUG 模板two处理用时: 13 毫秒! 
+13:08:27.597 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+13:08:27.597 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+13:08:27.597 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+13:08:27.597 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+13:08:27.597 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+13:08:27.597 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+13:08:27.597 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+13:08:27.597 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+13:08:27.597 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+13:08:27.597 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+13:08:27.597 DEBUG 忽略文件: D:\work\Children's Day\src\resource\content.png 
+13:08:27.597 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text-2.png 
+13:08:27.597 INFO  css中的资源处理完毕! 
+13:08:27.597 DEBUG 使用postcss处理样式，使用了2个插件! 
+13:08:27.601 INFO  正在处理script! 
+13:08:27.601 INFO  工程中包含多个页面! 
+13:08:27.602 DEBUG 页面中不包含切换动画! 
+13:08:27.715 INFO  js中的资源处理完毕! 
+13:08:27.715 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+13:08:27.715 DEBUG 外部脚本数量: 1 
+13:08:27.715 DEBUG 处理脚本: jquery1.11.0 
+13:08:27.715 DEBUG 网络脚本: jquery1.11.0 
+13:08:27.715 DEBUG 完成外部脚本引用处理! 
+13:08:27.715 DEBUG 输出scriptData 
+13:08:27.715 DEBUG 判断是否可以输出Html! 
+13:08:27.715 DEBUG 还有没有经过处理的资源! 
+13:08:27.841 INFO  使用postcss处理完毕! 用时: 244 毫秒 
+13:08:27.841 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+13:08:27.841 DEBUG 判断是否可以输出Html! 
+13:08:27.841 DEBUG 准备输出html! 
+13:08:27.841 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+13:08:27.841 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+13:08:27.841 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+13:08:27.841 DEBUG 忽略文件: D:\work\Children's Day\src\resource\de.png 
+13:08:27.841 DEBUG 开始美化html 
+13:08:27.847 INFO  发送重新页面需要刷新命令! 
+13:08:27.850 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+13:10:28.103 INFO  file change: D:\work\Children's Day\src\page\two.page 
+13:10:28.104 INFO  --------------------------- 开始编译 --------------------------- 
+13:10:28.104 INFO  程序运行目录: D:\work\Children's Day 
+13:10:28.104 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+13:10:28.104 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+13:10:28.104 DEBUG 读取网页标题: 页面 
+13:10:28.104 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+13:10:28.104 INFO  开始处理模块: one 
+13:10:28.104 DEBUG 处理模板: ./src/page/one.page 
+13:10:28.116 DEBUG 发现 keyframes 规则: fadeIn 
+13:10:28.116 DEBUG 发现 keyframes 规则: fadeIn2 
+13:10:28.116 DEBUG 发现 keyframes 规则: short 
+13:10:28.116 DEBUG 缓存模板: one./src/page/one.page 
+13:10:28.116 DEBUG 模板one处理用时: 12 毫秒! 
+13:10:28.116 INFO  开始处理模块: two 
+13:10:28.116 DEBUG 处理模板: ./src/page/two.page 
+13:10:28.123 DEBUG 缓存模板: two./src/page/two.page 
+13:10:28.123 DEBUG 模板two处理用时: 7 毫秒! 
+13:10:28.123 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+13:10:28.123 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+13:10:28.123 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+13:10:28.123 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+13:10:28.123 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+13:10:28.123 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+13:10:28.124 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+13:10:28.124 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+13:10:28.124 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+13:10:28.124 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+13:10:28.124 DEBUG 忽略文件: D:\work\Children's Day\src\resource\content.png 
+13:10:28.124 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text-2.png 
+13:10:28.124 INFO  css中的资源处理完毕! 
+13:10:28.124 DEBUG 使用postcss处理样式，使用了2个插件! 
+13:10:28.128 INFO  正在处理script! 
+13:10:28.129 INFO  工程中包含多个页面! 
+13:10:28.129 DEBUG 页面中不包含切换动画! 
+13:10:28.201 INFO  js中的资源处理完毕! 
+13:10:28.202 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+13:10:28.202 DEBUG 外部脚本数量: 1 
+13:10:28.202 DEBUG 处理脚本: jquery1.11.0 
+13:10:28.202 DEBUG 网络脚本: jquery1.11.0 
+13:10:28.202 DEBUG 完成外部脚本引用处理! 
+13:10:28.202 DEBUG 输出scriptData 
+13:10:28.202 DEBUG 判断是否可以输出Html! 
+13:10:28.202 DEBUG 还有没有经过处理的资源! 
+13:10:28.326 INFO  使用postcss处理完毕! 用时: 202 毫秒 
+13:10:28.326 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+13:10:28.326 DEBUG 判断是否可以输出Html! 
+13:10:28.326 DEBUG 准备输出html! 
+13:10:28.326 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+13:10:28.326 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+13:10:28.326 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+13:10:28.326 DEBUG 忽略文件: D:\work\Children's Day\src\resource\de.png 
+13:10:28.326 DEBUG 开始美化html 
+13:10:28.331 INFO  发送重新页面需要刷新命令! 
+13:10:28.333 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+13:10:45.349 INFO  file change: D:\work\Children's Day\src\page\two.page 
+13:10:45.350 INFO  --------------------------- 开始编译 --------------------------- 
+13:10:45.350 INFO  程序运行目录: D:\work\Children's Day 
+13:10:45.350 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+13:10:45.350 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+13:10:45.350 DEBUG 读取网页标题: 页面 
+13:10:45.350 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+13:10:45.350 INFO  开始处理模块: one 
+13:10:45.350 DEBUG 处理模板: ./src/page/one.page 
+13:10:45.363 DEBUG 发现 keyframes 规则: fadeIn 
+13:10:45.363 DEBUG 发现 keyframes 规则: fadeIn2 
+13:10:45.363 DEBUG 发现 keyframes 规则: short 
+13:10:45.363 DEBUG 缓存模板: one./src/page/one.page 
+13:10:45.363 DEBUG 模板one处理用时: 13 毫秒! 
+13:10:45.363 INFO  开始处理模块: two 
+13:10:45.363 DEBUG 处理模板: ./src/page/two.page 
+13:10:45.369 DEBUG 缓存模板: two./src/page/two.page 
+13:10:45.369 DEBUG 模板two处理用时: 6 毫秒! 
+13:10:45.370 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+13:10:45.370 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+13:10:45.370 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+13:10:45.370 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+13:10:45.370 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+13:10:45.370 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+13:10:45.370 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+13:10:45.370 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+13:10:45.370 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+13:10:45.370 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+13:10:45.370 DEBUG 忽略文件: D:\work\Children's Day\src\resource\content.png 
+13:10:45.370 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text-2.png 
+13:10:45.370 INFO  css中的资源处理完毕! 
+13:10:45.370 DEBUG 使用postcss处理样式，使用了2个插件! 
+13:10:45.375 INFO  正在处理script! 
+13:10:45.375 INFO  工程中包含多个页面! 
+13:10:45.375 DEBUG 页面中不包含切换动画! 
+13:10:45.481 INFO  js中的资源处理完毕! 
+13:10:45.482 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+13:10:45.482 DEBUG 外部脚本数量: 1 
+13:10:45.482 DEBUG 处理脚本: jquery1.11.0 
+13:10:45.482 DEBUG 网络脚本: jquery1.11.0 
+13:10:45.482 DEBUG 完成外部脚本引用处理! 
+13:10:45.482 DEBUG 输出scriptData 
+13:10:45.482 DEBUG 判断是否可以输出Html! 
+13:10:45.482 DEBUG 还有没有经过处理的资源! 
+13:10:45.599 INFO  使用postcss处理完毕! 用时: 229 毫秒 
+13:10:45.599 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+13:10:45.600 DEBUG 判断是否可以输出Html! 
+13:10:45.600 DEBUG 准备输出html! 
+13:10:45.600 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+13:10:45.600 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+13:10:45.600 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+13:10:45.600 DEBUG 忽略文件: D:\work\Children's Day\src\resource\de.png 
+13:10:45.600 DEBUG 开始美化html 
+13:10:45.608 INFO  发送重新页面需要刷新命令! 
+13:10:45.615 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+13:11:53.734 INFO  file change: D:\work\Children's Day\src\page\two.page 
+13:11:53.735 INFO  --------------------------- 开始编译 --------------------------- 
+13:11:53.735 INFO  程序运行目录: D:\work\Children's Day 
+13:11:53.735 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+13:11:53.735 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+13:11:53.735 DEBUG 读取网页标题: 页面 
+13:11:53.735 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+13:11:53.735 INFO  开始处理模块: one 
+13:11:53.735 DEBUG 处理模板: ./src/page/one.page 
+13:11:53.749 DEBUG 发现 keyframes 规则: fadeIn 
+13:11:53.749 DEBUG 发现 keyframes 规则: fadeIn2 
+13:11:53.749 DEBUG 发现 keyframes 规则: short 
+13:11:53.749 DEBUG 缓存模板: one./src/page/one.page 
+13:11:53.749 DEBUG 模板one处理用时: 14 毫秒! 
+13:11:53.749 INFO  开始处理模块: two 
+13:11:53.749 DEBUG 处理模板: ./src/page/two.page 
+13:11:53.758 DEBUG 发现 keyframes 规则: short 
+13:11:53.759 DEBUG 缓存模板: two./src/page/two.page 
+13:11:53.759 DEBUG 模板two处理用时: 10 毫秒! 
+13:11:53.759 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+13:11:53.759 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+13:11:53.760 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+13:11:53.760 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+13:11:53.760 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+13:11:53.760 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+13:11:53.760 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+13:11:53.760 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+13:11:53.760 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+13:11:53.760 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+13:11:53.760 DEBUG 忽略文件: D:\work\Children's Day\src\resource\content.png 
+13:11:53.760 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text-2.png 
+13:11:53.760 INFO  css中的资源处理完毕! 
+13:11:53.760 DEBUG 使用postcss处理样式，使用了2个插件! 
+13:11:53.763 INFO  正在处理script! 
+13:11:53.763 INFO  工程中包含多个页面! 
+13:11:53.764 DEBUG 页面中不包含切换动画! 
+13:11:53.888 INFO  js中的资源处理完毕! 
+13:11:53.888 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+13:11:53.888 DEBUG 外部脚本数量: 1 
+13:11:53.888 DEBUG 处理脚本: jquery1.11.0 
+13:11:53.888 DEBUG 网络脚本: jquery1.11.0 
+13:11:53.888 DEBUG 完成外部脚本引用处理! 
+13:11:53.888 DEBUG 输出scriptData 
+13:11:53.888 DEBUG 判断是否可以输出Html! 
+13:11:53.888 DEBUG 还有没有经过处理的资源! 
+13:11:54.010 INFO  使用postcss处理完毕! 用时: 250 毫秒 
+13:11:54.010 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+13:11:54.011 DEBUG 判断是否可以输出Html! 
+13:11:54.011 DEBUG 准备输出html! 
+13:11:54.011 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+13:11:54.011 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+13:11:54.011 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+13:11:54.011 DEBUG 忽略文件: D:\work\Children's Day\src\resource\de.png 
+13:11:54.011 DEBUG 开始美化html 
+13:11:54.015 INFO  发送重新页面需要刷新命令! 
+13:11:54.035 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+13:12:09.819 INFO  file change: D:\work\Children's Day\src\page\two.page 
+13:12:09.820 INFO  --------------------------- 开始编译 --------------------------- 
+13:12:09.820 INFO  程序运行目录: D:\work\Children's Day 
+13:12:09.820 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+13:12:09.820 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+13:12:09.820 DEBUG 读取网页标题: 页面 
+13:12:09.820 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+13:12:09.820 INFO  开始处理模块: one 
+13:12:09.820 DEBUG 处理模板: ./src/page/one.page 
+13:12:09.833 DEBUG 发现 keyframes 规则: fadeIn 
+13:12:09.833 DEBUG 发现 keyframes 规则: fadeIn2 
+13:12:09.833 DEBUG 发现 keyframes 规则: short 
+13:12:09.833 DEBUG 缓存模板: one./src/page/one.page 
+13:12:09.833 DEBUG 模板one处理用时: 13 毫秒! 
+13:12:09.833 INFO  开始处理模块: two 
+13:12:09.833 DEBUG 处理模板: ./src/page/two.page 
+13:12:09.840 DEBUG 发现 keyframes 规则: short 
+13:12:09.840 DEBUG 缓存模板: two./src/page/two.page 
+13:12:09.840 DEBUG 模板two处理用时: 7 毫秒! 
+13:12:09.840 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+13:12:09.840 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+13:12:09.840 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+13:12:09.840 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+13:12:09.840 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+13:12:09.840 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+13:12:09.840 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+13:12:09.840 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+13:12:09.840 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+13:12:09.840 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+13:12:09.840 DEBUG 忽略文件: D:\work\Children's Day\src\resource\content.png 
+13:12:09.842 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text-2.png 
+13:12:09.842 INFO  css中的资源处理完毕! 
+13:12:09.842 DEBUG 使用postcss处理样式，使用了2个插件! 
+13:12:09.846 INFO  正在处理script! 
+13:12:09.846 INFO  工程中包含多个页面! 
+13:12:09.846 DEBUG 页面中不包含切换动画! 
+13:12:09.953 INFO  js中的资源处理完毕! 
+13:12:09.953 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+13:12:09.953 DEBUG 外部脚本数量: 1 
+13:12:09.953 DEBUG 处理脚本: jquery1.11.0 
+13:12:09.953 DEBUG 网络脚本: jquery1.11.0 
+13:12:09.953 DEBUG 完成外部脚本引用处理! 
+13:12:09.953 DEBUG 输出scriptData 
+13:12:09.953 DEBUG 判断是否可以输出Html! 
+13:12:09.953 DEBUG 还有没有经过处理的资源! 
+13:12:10.075 INFO  使用postcss处理完毕! 用时: 233 毫秒 
+13:12:10.075 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+13:12:10.075 DEBUG 判断是否可以输出Html! 
+13:12:10.075 DEBUG 准备输出html! 
+13:12:10.075 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+13:12:10.075 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+13:12:10.075 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+13:12:10.075 DEBUG 忽略文件: D:\work\Children's Day\src\resource\de.png 
+13:12:10.075 DEBUG 开始美化html 
+13:12:10.080 INFO  发送重新页面需要刷新命令! 
+13:12:10.081 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
+13:12:25.377 INFO  file change: D:\work\Children's Day\src\page\two.page 
+13:12:25.378 INFO  --------------------------- 开始编译 --------------------------- 
+13:12:25.378 INFO  程序运行目录: D:\work\Children's Day 
+13:12:25.378 INFO  刷新模式,变化目录: D:\work\Children's Day\src\page\two.page 
+13:12:25.378 INFO  读取模板文件: C:\Users\PG\Documents\GitHub\PG\lib\index.html 
+13:12:25.378 DEBUG 读取网页标题: 页面 
+13:12:25.378 DEBUG 处理页面源信息: [{"http-equiv":"content-type","content":"text/html; charset=UTF-8"},{"name":"viewport","content":"initial-scale=1, maximum-scale=1, user-scalable=yes, shrink-to-fit=no"}] 
+13:12:25.378 INFO  开始处理模块: one 
+13:12:25.378 DEBUG 处理模板: ./src/page/one.page 
+13:12:25.388 DEBUG 发现 keyframes 规则: fadeIn 
+13:12:25.388 DEBUG 发现 keyframes 规则: fadeIn2 
+13:12:25.388 DEBUG 发现 keyframes 规则: short 
+13:12:25.388 DEBUG 缓存模板: one./src/page/one.page 
+13:12:25.388 DEBUG 模板one处理用时: 10 毫秒! 
+13:12:25.388 INFO  开始处理模块: two 
+13:12:25.388 DEBUG 处理模板: ./src/page/two.page 
+13:12:25.393 DEBUG 发现 keyframes 规则: short 
+13:12:25.394 DEBUG 缓存模板: two./src/page/two.page 
+13:12:25.394 DEBUG 模板two处理用时: 6 毫秒! 
+13:12:25.394 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-text.png 
+13:12:25.394 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll.png 
+13:12:25.394 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+13:12:25.394 DEBUG 忽略文件: D:\work\Children's Day\src\resource\hand.png 
+13:12:25.394 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-1.png 
+13:12:25.394 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-2.png 
+13:12:25.394 DEBUG 忽略文件: D:\work\Children's Day\src\resource\button-3.png 
+13:12:25.394 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text.png 
+13:12:25.394 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+13:12:25.394 DEBUG 忽略文件: D:\work\Children's Day\src\resource\scroll-2.png 
+13:12:25.394 DEBUG 忽略文件: D:\work\Children's Day\src\resource\content.png 
+13:12:25.394 DEBUG 忽略文件: D:\work\Children's Day\src\resource\text-2.png 
+13:12:25.394 INFO  css中的资源处理完毕! 
+13:12:25.394 DEBUG 使用postcss处理样式，使用了2个插件! 
+13:12:25.398 INFO  正在处理script! 
+13:12:25.398 INFO  工程中包含多个页面! 
+13:12:25.398 DEBUG 页面中不包含切换动画! 
+13:12:25.474 INFO  js中的资源处理完毕! 
+13:12:25.474 DEBUG 处理引用脚本: [{"name":"jquery1.11.0","src":"http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js"}] 
+13:12:25.474 DEBUG 外部脚本数量: 1 
+13:12:25.474 DEBUG 处理脚本: jquery1.11.0 
+13:12:25.474 DEBUG 网络脚本: jquery1.11.0 
+13:12:25.474 DEBUG 完成外部脚本引用处理! 
+13:12:25.474 DEBUG 输出scriptData 
+13:12:25.474 DEBUG 判断是否可以输出Html! 
+13:12:25.474 DEBUG 还有没有经过处理的资源! 
+13:12:25.608 INFO  使用postcss处理完毕! 用时: 214 毫秒 
+13:12:25.608 DEBUG 需要经过特殊处理的css: [["[template=one] .one:",".one[template=one]:"],["[template=one] .one ",".one[template=one] "],["[template=one] .one{",".one[template=one]{"],["[template=one] div:","div[template=one]:"],["[template=one] div ","div[template=one] "],["[template=one] div{","div[template=one]{"],["[template=two] .two:",".two[template=two]:"],["[template=two] .two ",".two[template=two] "],["[template=two] .two{",".two[template=two]{"],["[template=two] div:","div[template=two]:"],["[template=two] div ","div[template=two] "],["[template=two] div{","div[template=two]{"]] 
+13:12:25.608 DEBUG 判断是否可以输出Html! 
+13:12:25.608 DEBUG 准备输出html! 
+13:12:25.608 DEBUG 忽略文件: D:\work\Children's Day\src\resource\logo.png 
+13:12:25.608 DEBUG 忽略文件: D:\work\Children's Day\src\resource\editor.png 
+13:12:25.608 DEBUG 忽略文件: D:\work\Children's Day\src\resource\message.png 
+13:12:25.608 DEBUG 忽略文件: D:\work\Children's Day\src\resource\de.png 
+13:12:25.608 DEBUG 开始美化html 
+13:12:25.612 INFO  发送重新页面需要刷新命令! 
+13:12:25.618 INFO  写入文件: D:\work\Children's Day\dist\static\css\owo.main.css 
