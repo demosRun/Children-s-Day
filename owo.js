@@ -43,6 +43,11 @@ module.exports = {
       isPage: true,
       name: 'one',
       src: './src/page/one.page'
+    },
+    {
+      isPage: true,
+      name: 'two',
+      src: './src/page/two.page'
     }
   ],
   // 调试模式配置

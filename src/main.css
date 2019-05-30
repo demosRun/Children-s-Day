@@ -54,7 +54,8 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
   width: calc(100% - 30px);
   height: calc(100% - 40px);
   background-size: 100%;
-  margin: 10px;
+  margin: 10px auto;
+  margin-top: 20px;
   background-color: #14bf8d;
   border: 5px solid #1a1a1a;
   position: relative;
@@ -64,10 +65,10 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
   width: 82px;
   height: 48px;
   background-size: 100% 100%;
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   margin: 0 auto;
-  top: 5px;
+  top: -20px;
   background-image: url('@&nail.png&');
 }

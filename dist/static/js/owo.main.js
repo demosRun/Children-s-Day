@@ -1,5 +1,5 @@
 // build by owo frame!
-// Wed May 29 2019 16:55:53 GMT+0800 (GMT+08:00)
+// Thu May 30 2019 10:04:39 GMT+0800 (GMT+08:00)
 
 "use strict";
 
@@ -8,8 +8,38 @@ window.owo = {
   script: {
     "one": {
       "created": function created() {
+        var _this = this;
+
+        // 获取屏幕信息
+        var screenInfo = $tool.getScreenInfo(); // 判断屏幕比例
+
+        console.log(this.$el);
+
+        if (screenInfo.ratio > 1) {
+          this.$el.getElementsByClassName('box')[0].style.width = screenInfo.clientHeight * 0.5 + 'px';
+        }
+
         setTimeout(function () {
-          document.getElementsByClassName('middle')[0].style.width = '229px';
+          _this.$el.getElementsByClassName('middle')[0].style.width = '229px';
+        }, 0);
+      },
+      "two": function two() {
+        $go('two', 'moveToLeft', 'moveFromRight');
+      }
+    },
+    "two": {
+      "created": function created() {
+        var _this2 = this;
+
+        // 获取屏幕信息
+        var screenInfo = $tool.getScreenInfo(); // 判断屏幕比例
+
+        if (screenInfo.ratio > 1) {
+          this.$el.getElementsByClassName('box')[0].style.width = screenInfo.clientHeight * 0.5 + 'px';
+        }
+
+        setTimeout(function () {
+          _this2.$el.getElementsByClassName('middle')[0].style.width = '229px';
         }, 0);
       },
       "close": function close() {}
@@ -318,20 +348,37 @@ function $change(key, value) {
       element.style.display = 'none';
     }
   });
+} // 获取URL #后面内容
+
+
+function getarg(url) {
+  var arg = url.split("#");
+  return arg[1];
 } // 页面资源加载完毕事件
 
 
 _owo.ready = function () {
-  var page = owo.entry;
-  window.owo.activePage = page; // 更改$data链接
+  // 取出URL地址判断当前所在页面
+  var pageArg = getarg(window.location.hash); // 从配置项中取出程序入口
 
-  $data = owo.script[page].data;
-  var entryDom = document.getElementById('o-' + page);
+  var page = pageArg ? pageArg.split('?')[0] : owo.entry;
 
-  if (entryDom) {
-    _owo.handlePage(page, entryDom);
+  if (page) {
+    var entryDom = document.getElementById('o-' + page);
+
+    if (entryDom) {
+      // 显示主页面
+      entryDom.style.display = 'block';
+      window.owo.activePage = page; // 更改$data链接
+
+      $data = owo.script[page].data;
+
+      _owo.handlePage(page, entryDom);
+    } else {
+      console.error('入口文件设置错误,错误值为: ', entryDom);
+    }
   } else {
-    console.error('找不到页面入口! 设置的入口为: ' + page);
+    console.error('未设置程序入口!');
   } // 设置状态为dom准备完毕
 
 
@@ -343,6 +390,22 @@ _owo.ready = function () {
       element();
     });
   }
+}; // url发生改变事件
+
+
+window.onhashchange = function (e) {
+  var oldUrlParam = getarg(e.oldURL); // 如果旧页面不存在则为默认页面
+
+  if (!oldUrlParam) oldUrlParam = owo.entry;
+  var newUrlParam = getarg(e.newURL); // 如果没有跳转到任何页面则跳转到主页
+
+  if (newUrlParam === undefined) {
+    newUrlParam = owo.entry;
+  } // 如果没有发生页面跳转则不需要进行操作
+  // 切换页面特效
+
+
+  switchPage(oldUrlParam, newUrlParam);
 };
 /*
  * 传递函数给whenReady()
@@ -434,3 +497,19 @@ function switchPage(oldUrlParam, newUrlParam) {
 
   _owo.handlePage(newPage, newDom);
 }
+/**
+* 获取屏幕信息
+* @return {object} 屏幕信息
+*/
+
+
+owo.tool.getScreenInfo = function () {
+  // 有可能不兼容ie
+  return {
+    clientWidth: window.innerWidth,
+    clientHeight: window.innerHeight,
+    ratio: window.innerWidth / window.innerHeight,
+    // 缩放比例
+    devicePixelRatio: window.devicePixelRatio || 1
+  };
+};

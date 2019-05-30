@@ -3,7 +3,6 @@
     <div class="box">
       <!-- 顶部小图钉 -->
       <div class="nail"></div>
-      <img class="logo" src="@&logo.png&"/>
       <!-- 卷轴区域 -->
       <div class="title">
         <div class="left"></div>
@@ -25,7 +24,7 @@
         <div class="shelter shelter-7"></div>
       </div>
       <!-- 底部按钮区域 -->
-      <div class="button-box" @click="two">
+      <div class="button-box">
         <div class="button-1 button"></div>
         <div class="button-2 button"></div>
         <div class="button-3 button"></div>
@@ -40,7 +39,6 @@
       // 获取屏幕信息
       const screenInfo = $tool.getScreenInfo()
       // 判断屏幕比例
-      console.log(this.$el)
       if (screenInfo.ratio > 1) {
         this.$el.getElementsByClassName('box')[0].style.width = screenInfo.clientHeight * 0.5 + 'px'
       }
@@ -48,8 +46,7 @@
         this.$el.getElementsByClassName('middle')[0].style.width = '229px'
       }, 0)
     },
-    two: function () {
-      $go('two', 'moveToLeft', 'moveFromRight')
+    close: function () {
     }
   }
 </script>
@@ -161,12 +158,7 @@
     background-size: 60px 60px;
   }
 }
-.logo {
-  width: 70px;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-}
+
 .text-box {
   width: 138px;
   background-image: url('@&text.png&');
